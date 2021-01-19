@@ -1,0 +1,55 @@
+Origin: ArkaneSystems
+Label: WSL Transdebian
+Codename: focal
+Architectures: source amd64
+Components: main
+Description: WSL-specific packages hosted on the Arkane Systems github repository
+SignWith: 428AD1A0BA078ABB
+
+Origin: ArkaneSystems
+Label: WSL Transdebian
+Codename: bionic
+Architectures: source amd64
+Components: main
+Description: WSL-specific packages hosted on the Arkane Systems github repository
+SignWith: 428AD1A0BA078ABB
+
+Origin: ArkaneSystems
+Label: WSL Transdebian
+Codename: stretch
+Architectures: source amd64
+Components: main
+Description: WSL-specific packages hosted on the Arkane Systems github repository
+SignWith: 428AD1A0BA078ABB
+
+Origin: ArkaneSystems
+Label: WSL Transdebian
+Codename: bullseye
+Architectures: source amd64
+Components: main
+Description: WSL-specific packages hosted on the Arkane Systems github repository
+SignWith: 428AD1A0BA078ABB
+
+Origin: ArkaneSystems
+Label: WSL Transdebian
+Codename: buster
+Architectures: source amd64
+Components: main
+Description: WSL-specific packages hosted on the Arkane Systems github repository
+SignWith: 428AD1A0BA078ABB
+
+Origin: ArkaneSystems
+Label: WSL Transdebian
+Codename: bookworm
+Architectures: source amd64
+Components: main
+Description: WSL-specific packages hosted on the Arkane Systems github repository
+SignWith: 428AD1A0BA078ABB
+
+Origin: ArkaneSystems
+Label: WSL Transdebian
+Codename: sid
+Architectures: source amd64
+Components: main
+Description: WSL-specific packages hosted on the Arkane Systems github repository
+SignWith: 428AD1A0BA078ABB
