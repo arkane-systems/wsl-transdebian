@@ -1,5 +1,5 @@
 # wsl-transdebian
-Backup repository for WSL-only apt packages.
+A repository for WSL-only apt packages.
 
 This includes packages for multiple distributions which use apt packages, not merely Debian. Currently supported are:
 
