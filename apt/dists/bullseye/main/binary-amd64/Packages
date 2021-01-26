@@ -1,17 +1,17 @@
 Package: systemd-genie
-Version: 1.33
+Version: 1.34
 Architecture: amd64
 Maintainer: Alistair Young <avatar@arkane-systems.net>
 Installed-Size: 1671
-Depends: libc6 (>= 2.14), libstdc++6 (>= 4.4.0), dbus, policykit-1, daemonize, systemd, dotnet-runtime-5.0, systemd-container
+Depends: libc6 (>= 2.14), libstdc++6 (>= 4.4.0), dbus, policykit-1, daemonize, systemd, dotnet-runtime-5.0, systemd-container, gawk
 Homepage: https://github.com/arkane-systems/genie
 Priority: optional
 Section: contrib/misc
-Filename: pool/main/s/systemd-genie/systemd-genie_1.33_amd64.deb
-Size: 450472
-SHA256: 365612c3e623e0a0c531d9189e37407a2f785a1764c36ecad115347dfa25c841
-SHA1: 752afe8c41f04d1d15652092f4af05d53c189752
-MD5sum: 657b2ffb012653c4350b3fe21efdb172
+Filename: pool/main/s/systemd-genie/systemd-genie_1.34_amd64.deb
+Size: 450624
+SHA256: 8eda2ea67d8f1ee30a67618246d133a753c335526c20bde8709ce686ea20ec13
+SHA1: bdd1f915271d66ad1c60056dc16458166764d7f5
+MD5sum: 9fc820038f2ff9f82283233479227c43
 Description: quick way into a systemd "bottle" under Windows Subsystem for Linux
  Automates the process of starting up, entering into, and shutting down
  a container within which systemd is pid 1, effectively enabling the use
