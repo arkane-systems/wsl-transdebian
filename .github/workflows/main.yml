@@ -19,7 +19,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Runs a single command using the runners shell
-      - uses: arkane-systems/apt-repo-update@v1.1-dev2
+      - uses: arkane-systems/apt-repo-update@v1.1
         with:
           debug: false
           github_token: ${{ secrets.PAT }}
