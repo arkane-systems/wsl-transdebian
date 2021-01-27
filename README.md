@@ -29,6 +29,10 @@ EOF
 apt update
 ```
 
+## Contributing
+
+To contribute packages to the wsl-transdebian repo, please fork this repository, place your packages in the "updates" folder within it, and then send me a pull request.
+
 ## Repository source
 
 You can see the source for this repository at:
