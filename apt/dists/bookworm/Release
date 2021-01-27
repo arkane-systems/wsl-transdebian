@@ -1,7 +1,7 @@
 Origin: ArkaneSystems
 Label: WSL Transdebian
 Codename: bookworm
-Date: Tue, 26 Jan 2021 14:59:11 UTC
+Date: Wed, 27 Jan 2021 09:07:10 UTC
 Architectures: amd64
 Components: main
 Description: WSL-specific packages hosted on the Arkane Systems github repository
