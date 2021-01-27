@@ -1,0 +1,37 @@
+name: Publish new packages.
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push events but only for the master branch
+  push:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  publish:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Runs a single command using the runners shell
+      - uses: arkane-systems/apt-repo-update@v1.1-dev
+        with:
+          debug: false
+          github_token: ${{ secrets.PAT }}
+          repo_supported_arch: |
+            amd64
+          repo_supported_distro: |
+            focal
+            bionic
+            buster
+            bullseye
+            bookworm
+            sid
+          private_key: ${{ secrets.PRIVATE }}
+          key_passphrase: ${{ secrets.SECRET }} 
+ 
