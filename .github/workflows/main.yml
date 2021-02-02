@@ -32,6 +32,6 @@ jobs:
             bullseye
             bookworm
             sid
-          private_key: ${{ secrets.PRIVATE }}
-          key_passphrase: ${{ secrets.SECRET }} 
+          private_key: ${{ secrets.TRANSDEBIAN_REPO_SIGNING_KEY }}
+          key_passphrase: ${{ secrets.TRANSDEBIAN_REPO_PASSPHRASE }} 
  
