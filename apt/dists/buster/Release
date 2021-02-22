@@ -1,7 +1,7 @@
 Origin: ArkaneSystems
 Label: WSL Transdebian
 Codename: buster
-Date: Wed, 27 Jan 2021 09:07:10 UTC
+Date: Mon, 22 Feb 2021 01:11:45 UTC
 Architectures: amd64
 Components: main
 Description: WSL-specific packages hosted on the Arkane Systems github repository
