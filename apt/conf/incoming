@@ -1,0 +1,6 @@
+Name: default
+IncomingDir: incoming
+TempDir: tmp
+Options: multiple_distributions
+Allow: unstable>buster unstable>bullseye unstable>bookworm unstable>sid unstable>focal unstable>bionic
+Cleanup: on_deny on_error

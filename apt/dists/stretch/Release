@@ -1,7 +1,7 @@
 Origin: ArkaneSystems
 Label: WSL Transdebian
 Codename: stretch
-Date: Mon, 22 Feb 2021 01:12:58 UTC
+Date: Tue, 23 Feb 2021 19:48:12 UTC
 Architectures: amd64
 Components: main
 Description: WSL-specific packages hosted on the Arkane Systems github repository
