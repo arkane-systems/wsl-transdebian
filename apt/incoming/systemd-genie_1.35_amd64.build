@@ -1,0 +1,243 @@
+ dpkg-buildpackage -us -uc -ui
+dpkg-buildpackage: info: source package systemd-genie
+dpkg-buildpackage: info: source version 1.35
+dpkg-buildpackage: info: source distribution buster bullseye bookworm sid focal bionic
+dpkg-buildpackage: info: source changed by Alistair Young <avatar@arkane-systems.net>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+	rm -f debian/systemd-genie.debhelper.log
+   debian/rules override_dh_auto_clean
+make[1]: Entering directory '/home/avatar/src/genie/package/debian'
+make clean-inner
+make[2]: Entering directory '/home/avatar/src/genie/package/debian'
+# Innermost iteration; invoked by debuild.
+make -C binsrc clean
+make[3]: Entering directory '/home/avatar/src/genie/binsrc'
+make -C genie clean
+make[4]: Entering directory '/home/avatar/src/genie/binsrc/genie'
+rm -rf bin
+rm -rf obj
+make[4]: Leaving directory '/home/avatar/src/genie/binsrc/genie'
+make -C runinwsl clean
+make[4]: Entering directory '/home/avatar/src/genie/binsrc/runinwsl'
+rm -rf bin
+rm -rf obj
+make[4]: Leaving directory '/home/avatar/src/genie/binsrc/runinwsl'
+make[3]: Leaving directory '/home/avatar/src/genie/binsrc'
+make[2]: Leaving directory '/home/avatar/src/genie/package/debian'
+make[1]: Leaving directory '/home/avatar/src/genie/package/debian'
+   dh_autoreconf_clean
+   dh_clean
+	rm -f debian/debhelper-build-stamp
+	rm -rf debian/.debhelper/
+	rm -f -- debian/systemd-genie.substvars debian/files
+	rm -fr -- debian/systemd-genie/ debian/tmp/
+	find .  \( \( \
+		\( -path .\*/.git -o -path .\*/.svn -o -path .\*/.bzr -o -path .\*/.hg -o -path .\*/CVS -o -path .\*/.pc -o -path .\*/_darcs \) -prune -o -type f -a \
+	        \( -name '#*#' -o -name '.*~' -o -name '*~' -o -name DEADJOE \
+		 -o -name '*.orig' -o -name '*.rej' -o -name '*.bak' \
+		 -o -name '.*.orig' -o -name .*.rej -o -name '.SUMS' \
+		 -o -name TAGS -o \( -path '*/.deps/*' -a -name '*.P' \) \
+		\) -exec rm -f {} + \) -o \
+		\( -type d -a -name autom4te.cache -prune -exec rm -rf {} + \) \)
+ dpkg-source -b .
+dpkg-source: info: using source format '3.0 (native)'
+dpkg-source: info: building systemd-genie in systemd-genie_1.35.tar.xz
+dpkg-source: info: building systemd-genie in systemd-genie_1.35.dsc
+ debian/rules build
+dh build
+   dh_testdir
+   dh_update_autotools_config
+   dh_autoreconf
+   dh_auto_configure
+   debian/rules override_dh_auto_build
+make[1]: Entering directory '/home/avatar/src/genie/package/debian'
+make build-inner
+make[2]: Entering directory '/home/avatar/src/genie/package/debian'
+# Innermost iteration; invoked by debuild.
+make -C binsrc
+make[3]: Entering directory '/home/avatar/src/genie/binsrc'
+make -C genie
+make[4]: Entering directory '/home/avatar/src/genie/binsrc/genie'
+dotnet publish -c Release -r linux-x64
+Microsoft (R) Build Engine version 16.8.3+39993bd9d for .NET
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Determining projects to restore...
+  Restored /home/avatar/src/genie/binsrc/genie/genie.csproj (in 1.27 sec).
+  genie -> /home/avatar/src/genie/binsrc/genie/bin/Release/net5.0/linux-x64/genie.dll
+  genie -> /home/avatar/src/genie/binsrc/genie/bin/Release/net5.0/linux-x64/publish/
+make[4]: Leaving directory '/home/avatar/src/genie/binsrc/genie'
+make -C runinwsl
+make[4]: Entering directory '/home/avatar/src/genie/binsrc/runinwsl'
+dotnet publish -c Release -r linux-x64
+Microsoft (R) Build Engine version 16.8.3+39993bd9d for .NET
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Determining projects to restore...
+  Restored /home/avatar/src/genie/binsrc/runinwsl/runinwsl.csproj (in 285 ms).
+  runinwsl -> /home/avatar/src/genie/binsrc/runinwsl/bin/Release/net5.0/linux-x64/runinwsl.dll
+  runinwsl -> /home/avatar/src/genie/binsrc/runinwsl/bin/Release/net5.0/linux-x64/publish/
+make[4]: Leaving directory '/home/avatar/src/genie/binsrc/runinwsl'
+make[3]: Leaving directory '/home/avatar/src/genie/binsrc'
+make[2]: Leaving directory '/home/avatar/src/genie/package/debian'
+make[1]: Leaving directory '/home/avatar/src/genie/package/debian'
+   dh_auto_test
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+	rm -f -- debian/systemd-genie.substvars
+	rm -fr -- debian/.debhelper/generated/systemd-genie/ debian/systemd-genie/ debian/tmp/
+   dh_installdirs
+   debian/rules override_dh_auto_install
+make[1]: Entering directory '/home/avatar/src/genie/package/debian'
+make package-inner
+make[2]: Entering directory '/home/avatar/src/genie/package/debian'
+# Innermost iteration; invoked by debuild.
+# Binaries.
+mkdir -p "debian/systemd-genie/usr/bin"
+install -Dm 4755 -o root "binsrc/genie/bin/Release/net5.0/linux-x64/publish/genie" -t "debian/systemd-genie/usr/libexec/genie"
+install -Dm 0755 -o root "binsrc/runinwsl/bin/Release/net5.0/linux-x64/publish/runinwsl" -t "debian/systemd-genie/usr/libexec/genie"
+# Environment generator.
+install -Dm 0755 -o root "othersrc/scripts/10-genie-envar.sh" -t "debian/systemd-genie/usr/libexec/genie"
+# Configuration file.
+install -Dm 0644 -o root "othersrc/etc/genie.ini" -t "debian/systemd-genie/etc"
+make[2]: Leaving directory '/home/avatar/src/genie/package/debian'
+make[1]: Leaving directory '/home/avatar/src/genie/package/debian'
+   dh_install
+	install -d debian/.debhelper/generated/systemd-genie
+   dh_installdocs
+	install -d debian/systemd-genie/usr/share/doc/systemd-genie
+	cp --reflink=auto -a ./othersrc/docs/readme.md debian/systemd-genie/usr/share/doc/systemd-genie
+	chown -R 0:0 debian/systemd-genie/usr/share/doc
+	chmod -R u\+rw,go=rX debian/systemd-genie/usr/share/doc
+	install -p -m0644 debian/copyright debian/systemd-genie/usr/share/doc/systemd-genie/copyright
+   dh_installchangelogs
+	install -p -m0644 debian/changelog debian/systemd-genie/usr/share/doc/systemd-genie/changelog
+   dh_installexamples
+   dh_installman
+	install -d debian/systemd-genie/usr/share/man/man8/
+	install -p -m0644 ./othersrc/docs/genie.8 debian/systemd-genie/usr/share/man/man8/genie.8
+	man-recode --to-code UTF-8 --suffix .dh-new debian/systemd-genie/usr/share/man/man8/genie.8
+	mv debian/systemd-genie/usr/share/man/man8/genie.8.dh-new debian/systemd-genie/usr/share/man/man8/genie.8
+	chmod 0644 -- debian/systemd-genie/usr/share/man/man8/genie.8
+   dh_installcatalogs
+   dh_installcron
+   dh_installdebconf
+	install -d debian/systemd-genie/DEBIAN
+   dh_installemacsen
+   dh_installifupdown
+   dh_installinfo
+   dh_installinit
+   dh_installsystemd
+   dh_installsystemduser
+   dh_installmenu
+   dh_installmime
+   dh_installmodules
+   dh_installlogcheck
+   dh_installlogrotate
+   dh_installpam
+   dh_installppp
+   dh_installudev
+   dh_installgsettings
+   dh_installinitramfs
+   dh_installalternatives
+   dh_bugfiles
+   dh_ucf
+   dh_lintian
+	install -d debian/systemd-genie/usr/share/lintian/overrides
+	install -p -m0644 debian/systemd-genie.lintian-overrides debian/systemd-genie/usr/share/lintian/overrides/systemd-genie
+   dh_gconf
+dh_gconf: warning: Please migrate to dh_installgsettings; gconf + dh_gconf is scheduled for removal.
+   dh_icons
+   dh_perl
+   dh_usrlocal
+   dh_link
+	install -d debian/systemd-genie/usr/lib/systemd/user-environment-generators
+	rm -f debian/systemd-genie/usr/lib/systemd/user-environment-generators/10-genie-envar.sh
+	ln -s ../../../libexec/genie/10-genie-envar.sh debian/systemd-genie/usr/lib/systemd/user-environment-generators/10-genie-envar.sh
+	install -d debian/systemd-genie/usr/lib/systemd/system-environment-generators
+	rm -f debian/systemd-genie/usr/lib/systemd/system-environment-generators/10-genie-envar.sh
+	ln -s ../../../libexec/genie/10-genie-envar.sh debian/systemd-genie/usr/lib/systemd/system-environment-generators/10-genie-envar.sh
+	rm -f debian/systemd-genie/usr/bin/genie
+	ln -s ../libexec/genie/genie debian/systemd-genie/usr/bin/genie
+   dh_installwm
+   dh_installxfonts
+   dh_strip_nondeterminism
+   dh_compress
+	cd debian/systemd-genie
+	chmod a-x usr/share/doc/systemd-genie/changelog usr/share/doc/systemd-genie/readme.md usr/share/man/man8/genie.8
+	gzip -9nf usr/share/doc/systemd-genie/changelog usr/share/doc/systemd-genie/readme.md usr/share/man/man8/genie.8
+	cd '/home/avatar/src/genie/package/debian'
+   debian/rules override_dh_fixperms
+make[1]: Entering directory '/home/avatar/src/genie/package/debian'
+dh_fixperms -Xgenie
+	find debian/systemd-genie ! \( -regex .\*genie.\* \) -print0 2>/dev/null | xargs -0r chown --no-dereference 0:0
+	find debian/systemd-genie ! -type l -a ! \( -regex .\*genie.\* \) -a -true -print0 2>/dev/null | xargs -0r chmod go=rX,u+rw,a-s
+	find debian/systemd-genie/usr/share/doc -type f -a ! \( -regex .\*genie.\* \) -a ! -regex 'debian/systemd-genie/usr/share/doc/[^/]*/examples/.*' -print0 2>/dev/null | xargs -0r chmod 0644
+	find debian/systemd-genie/usr/share/doc -type d -a ! \( -regex .\*genie.\* \) -a -true -print0 2>/dev/null | xargs -0r chmod 0755
+	find debian/systemd-genie/usr/share/man debian/systemd-genie/usr/share/lintian/overrides -type f -a ! \( -regex .\*genie.\* \) -a -true -print0 2>/dev/null | xargs -0r chmod 0644
+	find debian/systemd-genie -type f \( -name '*.so.*' -o -name '*.so' -o -name '*.la' -o -name '*.a' -o -name '*.js' -o -name '*.css' -o -name '*.scss' -o -name '*.sass' -o -name '*.jpeg' -o -name '*.jpg' -o -name '*.png' -o -name '*.gif' -o -name '*.cmxs' -o -name '*.node' \) -a ! \( -regex .\*genie.\* \) -a -true -print0 2>/dev/null | xargs -0r chmod 0644
+	find debian/systemd-genie/usr/bin -type f -a ! \( -regex .\*genie.\* \) -a -true -print0 2>/dev/null | xargs -0r chmod a+x
+	find debian/systemd-genie/usr/lib -type f -name '*.ali' -a ! \( -regex .\*genie.\* \) -a -true -print0 2>/dev/null | xargs -0r chmod uga-w
+make[1]: Leaving directory '/home/avatar/src/genie/package/debian'
+   dh_missing
+   dh_dwz
+   dh_strip
+   dh_makeshlibs
+	rm -f debian/systemd-genie/DEBIAN/shlibs
+	rm -f debian/systemd-genie.debhelper.log
+   debian/rules override_dh_shlibdeps
+make[1]: Entering directory '/home/avatar/src/genie/package/debian'
+dh_shlibdeps -- -xlibgcc-s1
+	dpkg-shlibdeps -Tdebian/systemd-genie.substvars -xlibgcc-s1 debian/systemd-genie/usr/libexec/genie/runinwsl debian/systemd-genie/usr/libexec/genie/genie
+make[1]: Leaving directory '/home/avatar/src/genie/package/debian'
+   dh_installdeb
+	find debian/systemd-genie/etc -type f -printf '/etc/%P
+' | LC_ALL=C sort >> debian/systemd-genie/DEBIAN/conffiles
+	chmod 0644 -- debian/systemd-genie/DEBIAN/conffiles
+	chown 0:0 -- debian/systemd-genie/DEBIAN/conffiles
+   dh_gencontrol
+	echo misc:Depends= >> debian/systemd-genie.substvars
+	echo misc:Pre-Depends= >> debian/systemd-genie.substvars
+	dpkg-gencontrol -psystemd-genie -ldebian/changelog -Tdebian/systemd-genie.substvars -Pdebian/systemd-genie
+	chmod 0644 -- debian/systemd-genie/DEBIAN/control
+	chown 0:0 -- debian/systemd-genie/DEBIAN/control
+   dh_md5sums
+	cd debian/systemd-genie >/dev/null && xargs -r0 md5sum | perl -pe 'if (s@^\\@@) { s/\\\\/\\/g; }' > DEBIAN/md5sums
+	chmod 0644 -- debian/systemd-genie/DEBIAN/md5sums
+	chown 0:0 -- debian/systemd-genie/DEBIAN/md5sums
+   dh_builddeb
+	dpkg-deb --build debian/systemd-genie ..
+dpkg-deb: building package 'systemd-genie' in '../systemd-genie_1.35_amd64.deb'.
+ dpkg-genbuildinfo
+ dpkg-genchanges  >../systemd-genie_1.35_amd64.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source --after-build .
+dpkg-buildpackage: info: full upload; Debian-native package (full source is included)
+Now running lintian systemd-genie_1.35_amd64.changes ...
+E: systemd-genie changes: bad-distribution-in-changes-file bionic
+E: systemd-genie changes: bad-distribution-in-changes-file bookworm
+E: systemd-genie changes: bad-distribution-in-changes-file focal
+E: systemd-genie changes: multiple-distributions-in-changes-file buster bullseye bookworm sid focal bionic
+E: systemd-genie source: wayward-symbolic-link-target-in-source binsrc -> ../../binsrc
+E: systemd-genie source: wayward-symbolic-link-target-in-source othersrc -> ../../othersrc
+W: systemd-genie source: debian-rules-sets-DEB_BUILD_OPTIONS line 9
+N: 3 hints overridden (3 warnings)
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile dsc systemd-genie_1.35.dsc Alistair Young <avatar@arkane-systems.net>
+
+ fixup_buildinfo systemd-genie_1.35.dsc systemd-genie_1.35_amd64.buildinfo
+ signfile buildinfo systemd-genie_1.35_amd64.buildinfo Alistair Young <avatar@arkane-systems.net>
+
+ fixup_changes dsc systemd-genie_1.35.dsc systemd-genie_1.35_amd64.changes
+ fixup_changes buildinfo systemd-genie_1.35_amd64.buildinfo systemd-genie_1.35_amd64.changes
+ signfile changes systemd-genie_1.35_amd64.changes Alistair Young <avatar@arkane-systems.net>
+
+Successfully signed dsc, buildinfo, changes files

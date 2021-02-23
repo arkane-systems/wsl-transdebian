@@ -65,10 +65,10 @@ Homepage: https://github.com/arkane-systems/genie
 Priority: optional
 Section: contrib/misc
 Filename: pool/main/s/systemd-genie/systemd-genie_1.35_amd64.deb
-Size: 450404
-SHA256: aec4dde64592addd15924cd2fde191898acb484f23abefe943a436d685e71e4f
-SHA1: 06959cdd0f74712a3f2a2d6c42e27e36f18ac749
-MD5sum: 981b3ca4397d412ada6741a774308c81
+Size: 450736
+SHA256: d7725c771efb5a926ac4ef4e1680452b5c7b943f739f8d8522f6cd8a613d4d03
+SHA1: e8751996944ab197271d04fd5f1c080cca70f24e
+MD5sum: 678ace34a5607caf2b473163aa7ca889
 Description: quick way into a systemd "bottle" under Windows Subsystem for Linux
  Automates the process of starting up, entering into, and shutting down
  a container within which systemd is pid 1, effectively enabling the use

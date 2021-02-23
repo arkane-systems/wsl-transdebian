@@ -15,26 +15,26 @@ Build-Depends: debhelper-compat (= 12), dotnet-sdk-5.0
 Package-List:
  systemd-genie deb contrib/misc optional arch=amd64
 Checksums-Sha1:
- 27160897a4432b437b51d6cac060abd406272619 3240 systemd-genie_1.35.tar.xz
+ 236177ce3205bdd4cec80e7baa87b4da90b63645 3272 systemd-genie_1.35.tar.xz
 Checksums-Sha256:
- ad7f78475c811f8a9810f01fe9894495852a733df87fd66b1dddf5acdea8c580 3240 systemd-genie_1.35.tar.xz
+ d5649d30c043d3b94704e3b54eef825d2883a6cdb1c0897815b2d70b9b52f1bd 3272 systemd-genie_1.35.tar.xz
 Files:
- 8474a9fc5f78fe5416c84bd21593614a 3240 systemd-genie_1.35.tar.xz
+ f1f7b1608bdc6f9fc46c68dd905809bf 3272 systemd-genie_1.35.tar.xz
 
 -----BEGIN PGP SIGNATURE-----
 
-iQJOBAEBCAA4FiEEcresuyQPpfWcOh2k3FS1+H1SGNoFAmA1Pv0aHGF2YXRhckBh
-cmthbmUtc3lzdGVtcy5uZXQACgkQ3FS1+H1SGNp/OA//fiXiumi8rCahFQCdgck9
-JQ12VztKYroF/LRZKncckZAW5mp6yYP5oqij7+kFnm9W5GoaYoslvGBiheLxjO0F
-ODy+sUdFlP4mJ+kDJiNsknfWI6IQ0sHLp82CUggLYCh5pcBWebuzh5MrKtfwS4tX
-lWyeo1lc9tYxCDahAulN0py1Vz9sV+Y8FpQ7gGWsYnusticDI+pFOTT1zHgCFxt7
-CTuteZxYogv75xHxjL4SXSB3X8Z/d8O1k47lJIDWmn1dN9VsPDynCGLcHPAjTcMN
-VFPsEbqrzadis1W4ex/E0uHgowIdA0DyJtx05Ucf8FA9DIQfC9LCkoa/1462CB9N
-Ak5ZPHSRcyybXWDthJ12vBN3Z2Wgvf9EsLnXeNqIpYTB0A7j4bzuFxKX8m6Cw7oe
-hsblPOWZmAu6lcYza+9qksQwc4htwCkvdhNZF1gutgtQdAaHm3GUB5EgepcQU9GB
-dChTD23c4Ba4oaRYiYnLK5g9661PF4jF3trMrmg1a7mEXhxHDaTwdcCS6otHVZOY
-Z0B1KIgWf91FoOlB0nNbvXgl2TBJXC2yQJuLKfU/1ciBiWkud5D++xLwWWm1Nwzi
-ZqagpxNS2D2mNrZXfwP3TBIfTrtLcwYt0u8xlPl9VgxT73JFFn2tHU/n8Ok6TRzN
-3B8GGyGsQrkZmf3nIiHMpu4=
-=Xcxl
+iQJOBAEBCAA4FiEEcresuyQPpfWcOh2k3FS1+H1SGNoFAmA1guMaHGF2YXRhckBh
+cmthbmUtc3lzdGVtcy5uZXQACgkQ3FS1+H1SGNqmnw//YHXZNo38bLucDBvktfPv
+KUuuC/oy4PYWoAwpYSwhs78MjX9GIoIXLcC6YiC/ncXjmQ3QVTn765XARF237C/0
+BYVy8I0aGeCTN9h2bYROT+We0oSsCar2Vp/q5mcRdm0sNgp8pbn0FrlS5UjNYvde
+tH4pJozw4mqC/PfrhyRClcaC7ytfW93c8GZ3ElBh1OXpEk+3FqntMcpoSfHt1t4A
+1KqFc1iLLHurCOGaH/i9326p49BeuqwCSUL4DcpRuG6Bq0hvD3eDWEBrBcxpO3AO
+k/V0Kv9yDQaYFYwqhcwLH1yMVHmyCC41CI3xKoPNTRzti5l78+1tlfZi+/2YDpzU
+pN2O6uErGb204CE84zPsuRVh29VjiSane5+evMMqMLo9Sd+dR1OVsJBKsB+NhoK3
+RDrogmZiVvVI0A1jQFCOp0DNjcGuScKE/Zcuo0a3JjxHUxI9Qnu6WT3bbADpmINY
+Ex209u+BhhN7DGF0gSRI6II+rTDIwHnDkf/ofitBl2blV5pPfmYbRyOtsHEB77yK
+NRunjxDmKznfcRcqirMihcbG+g8h+lJIMzonblstWlIpyJQ5dPVd4kQLfczDk4ws
+BOmz8c62irnzmEiVWeywRsMxTucDWjE3q7U4M1v1pGpR+mBR4/9UNf4VhjTqGJMl
+orQBfDYGsyvt8cXQ/O7K0tc=
+=sCEc
 -----END PGP SIGNATURE-----
