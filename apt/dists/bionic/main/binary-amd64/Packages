@@ -74,3 +74,22 @@ Description: quick way into a systemd "bottle" under Windows Subsystem for Linux
  a container within which systemd is pid 1, effectively enabling the use
  of systemd within a WSL distro.
 
+Package: wsl-drop-caches
+Version: 0.1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 23
+Depends: systemd, python3, python3-psutil
+Homepage: https://github.com/arkane-systems/wsl-drop-caches
+Priority: optional
+Section: contrib/misc
+Filename: pool/main/w/wsl-drop-caches/wsl-drop-caches_0.1_amd64.deb
+Size: 3216
+SHA256: 577018e88a063e743ed5bcefc1567654b7574450c03ec180cd3362c5b699c99b
+SHA1: 06a7d3d9b6b6054a2b4e644183165fe175cba20a
+MD5sum: 34b7a75b87fb4ddeb864ae9fd884af71
+Description: periodically drops the caches, saving memory under Windows Subsystem for Linux
+ A python script which periodically drops the caches, which saves memory under
+ Windows Subsystem for Linux, which would otherwise expand to use all WSL
+ available memory.
+
