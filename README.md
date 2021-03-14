@@ -16,7 +16,7 @@ Deprecated (no longer updated) distributions include:
 
 ## Configuring the wsl-transdebian repo
 
-As root (`sudo -s`), enter the following commands, substituting the distribution codename for <distro>:
+As root (`sudo -s`), enter the following commands, substituting the distribution codename for &lt;distro&gt;:
 
 ```
 apt install apt-transport-https
