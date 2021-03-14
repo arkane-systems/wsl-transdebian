@@ -56,19 +56,19 @@ Description: Linux support headers for userspace development
  are used by the installed headers for GNU glibc and other system libraries.
 
 Package: systemd-genie
-Version: 1.35
+Version: 1.36
 Architecture: amd64
 Maintainer: Alistair Young <avatar@arkane-systems.net>
-Installed-Size: 1671
+Installed-Size: 1676
 Depends: libc6 (>= 2.14), libstdc++6 (>= 4.4.0), dbus, policykit-1, daemonize, systemd (>= 232-25), dotnet-runtime-5.0, systemd-container (>= 232-25), gawk
 Homepage: https://github.com/arkane-systems/genie
 Priority: optional
 Section: contrib/misc
-Filename: pool/main/s/systemd-genie/systemd-genie_1.35_amd64.deb
-Size: 450736
-SHA256: d7725c771efb5a926ac4ef4e1680452b5c7b943f739f8d8522f6cd8a613d4d03
-SHA1: e8751996944ab197271d04fd5f1c080cca70f24e
-MD5sum: 678ace34a5607caf2b473163aa7ca889
+Filename: pool/main/s/systemd-genie/systemd-genie_1.36_amd64.deb
+Size: 452912
+SHA256: 80a27df972a9c2a626cd4cebd26d313b588a90e74f1f300ca99255189202f8cb
+SHA1: 9845b70e9a4786c8f6339da20164305c6bb57c32
+MD5sum: 19199d4af82a56b3386d0bfc3c9c6d09
 Description: quick way into a systemd "bottle" under Windows Subsystem for Linux
  Automates the process of starting up, entering into, and shutting down
  a container within which systemd is pid 1, effectively enabling the use
