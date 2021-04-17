@@ -26,8 +26,8 @@ wget -O /etc/apt/trusted.gpg.d/wsl-transdebian.gpg https://arkane-systems.github
 chmod a+r /etc/apt/trusted.gpg.d/wsl-transdebian.gpg
 
 cat << EOF > /etc/apt/sources.list.d/wsl-transdebian.list
-deb https://arkane-systems.github.io/wsl-transdebian/apt/ <distro> main
-deb-src https://arkane-systems.github.io/wsl-transdebian/apt/ <distro> main
+deb https://arkane-systems.github.io/wsl-transdebian/apt/ $(cut -d "=" -f2 <<< $(cat /etc/lsb-release | grep DISTRIB_CODENAME)) main
+deb-src https://arkane-systems.github.io/wsl-transdebian/apt/ $(cut -d "=" -f2 <<< $(cat /etc/lsb-release | grep DISTRIB_CODENAME)) main
 EOF
 
 apt update
