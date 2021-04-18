@@ -1,27 +1,27 @@
 Origin: ArkaneSystems
 Label: WSL Transdebian
 Codename: sid
-Date: Fri, 16 Apr 2021 18:11:32 UTC
+Date: Sun, 18 Apr 2021 01:21:08 UTC
 Architectures: amd64
 Components: main
 Description: WSL-specific packages hosted on the Arkane Systems github repository
 MD5Sum:
- 291b4eb589977ccd9b82e6533c8eb582 4306 main/binary-amd64/Packages
- 7e87ab19f985f05774de06724f97ee74 1522 main/binary-amd64/Packages.gz
+ 07cef8c817e2483d6cefd1e6e622e7f0 6222 main/binary-amd64/Packages
+ 8c1d07cb46511afce7eb46da916057ee 1812 main/binary-amd64/Packages.gz
  a2f3caedb64cd6fb7d0cb5f6bed4df32 163 main/binary-amd64/Release
  065ab8f75510210b68da7f3df0bfb5f4 2109 main/source/Sources
  db8e7466423475a1fa1d450534ca70a3 825 main/source/Sources.gz
  d98f5a9c7aeb10035a4016358d9e9454 164 main/source/Release
 SHA1:
- 4dc0e5c66cb654c24d53e07f46fc378a19077772 4306 main/binary-amd64/Packages
- 465f435f3a31df9da3a8ffa2f42dae62c68a19c2 1522 main/binary-amd64/Packages.gz
+ 5a06967e55b79d76c1b46b87c112f61a2ff17412 6222 main/binary-amd64/Packages
+ 5dfc92f3e67f23ad15ec9014555a0afee53e9172 1812 main/binary-amd64/Packages.gz
  d03000dff4b7f7a13deb756cbaa63dcc6f4c9536 163 main/binary-amd64/Release
  5a61068b56d16a4a4bb98c6f8698375c2109bfc5 2109 main/source/Sources
  0febab3d2bed59a2a92c89ad0f5e056917a4355d 825 main/source/Sources.gz
  48f62b752773af3825c9beeb2c53b2b6987c998b 164 main/source/Release
 SHA256:
- cea2bdb34cffb87dd232aed8cc612eb032590bfa8cd8d6bd5c79c0c5844b12d3 4306 main/binary-amd64/Packages
- bca3f443c25b27eb1d14497401c50cb9705bf58f068c45006a8763292faf3677 1522 main/binary-amd64/Packages.gz
+ 028cabcd2f7d5ec3f2fa3cb3d8cfcc3d8374d3e0da0658469e8dee7bf508fb58 6222 main/binary-amd64/Packages
+ fafd2e827096628ce88dd611a00a50c485ad1418240b0a267679cbc69946e9b8 1812 main/binary-amd64/Packages.gz
  c562e878dcc6b169a20988934960aedd1dc7602263b1eb0a06f6d0529afc93c4 163 main/binary-amd64/Release
  9114c7aacbe0036f04fab2e09bb7aba73422e4f5b14f0ac5b58aa488586bd1a0 2109 main/source/Sources
  f6bcd3dfe6605c50d071d20cf5b171c992b025bef6acfe71b0ad9b8525436f25 825 main/source/Sources.gz
