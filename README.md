@@ -16,7 +16,7 @@ Deprecated (no longer updated) distributions include:
 
 ## Configuring the wsl-transdebian repo
 
-As root (`sudo -s`), enter the following commands, substituting the distribution codename for &lt;distro&gt;:
+As root (`sudo -s`), enter the following commands, after making sure you have lsb_release installed:
 
 ```
 apt install apt-transport-https
@@ -26,12 +26,14 @@ wget -O /etc/apt/trusted.gpg.d/wsl-transdebian.gpg https://arkane-systems.github
 chmod a+r /etc/apt/trusted.gpg.d/wsl-transdebian.gpg
 
 cat << EOF > /etc/apt/sources.list.d/wsl-transdebian.list
-deb https://arkane-systems.github.io/wsl-transdebian/apt/ <distro> main
-deb-src https://arkane-systems.github.io/wsl-transdebian/apt/ <distro> main
+deb https://arkane-systems.github.io/wsl-transdebian/apt/ $(lsb_release -cs) main
+deb-src https://arkane-systems.github.io/wsl-transdebian/apt/ $(lsb_release -cs) main
 EOF
 
 apt update
 ```
+
+If you do not have lsb_release installed, you will need to manually substitute the distro name (e.g., "bullseye") in place of `$(lsb_release -cs)`.
 
 ## Contributing
 
