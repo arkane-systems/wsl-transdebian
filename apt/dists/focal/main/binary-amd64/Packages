@@ -55,6 +55,24 @@ Description: Linux support headers for userspace development
  This package provides userspaces headers from the Linux kernel.  These headers
  are used by the installed headers for GNU glibc and other system libraries.
 
+Package: pulseaudio-dummy
+Version: 14.2-2
+Architecture: all
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 9
+Provides: pulseaudio
+Multi-Arch: foreign
+Homepage: https//github.com/cerebrate/fake-packages
+Priority: optional
+Section: sound
+Filename: pool/main/p/pulseaudio-dummy/pulseaudio-dummy_14.2-2_all.deb
+Size: 2236
+SHA256: fd10f28bd1a44d92212b5d1f3f02a8ced091783fd7c0309dc8d153526e7f8b58
+SHA1: 021a5a81104fdecb8eb67632ea50ec28adfc386b
+MD5sum: 2e718230c7091bfb8634b3730edfe7f4
+Description: Dummy pulseaudio package.
+ Hacks dependencies to allow non-install under WSLg
+
 Package: systemd-genie
 Version: 1.40
 Architecture: amd64
@@ -92,4 +110,22 @@ Description: periodically drops the caches, saving memory under Windows Subsyste
  A python script which periodically drops the caches, which saves memory under
  Windows Subsystem for Linux, which would otherwise expand to use all WSL
  available memory.
+
+Package: xwayland-dummy
+Version: 2:1.20.11-1
+Architecture: all
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 9
+Provides: xwayland
+Multi-Arch: foreign
+Homepage: https://github.com/cerebrate/fake-packages
+Priority: optional
+Section: x11
+Filename: pool/main/x/xwayland-dummy/xwayland-dummy_1.20.11-1_all.deb
+Size: 2228
+SHA256: d7159571f22f3ba4f349903a4a4a896ae2ae0e65557d7d2ccb6159291d202612
+SHA1: d77d4826e3818bbaa42d9632062419f74f57c716
+MD5sum: 62ec5370f60fe04aa188b437bab65c7c
+Description: Dummy xwayland package.
+ Hacks dependencies to allow non-install under WSLg.
 
