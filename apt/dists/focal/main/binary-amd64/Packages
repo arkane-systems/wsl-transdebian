@@ -1,3 +1,60 @@
+Package: linux-headers-5.10.16.3-microsoft-custom-wsl2+
+Source: linux-5.10.16.3-microsoft-custom-wsl2+
+Version: 5.10.16.3-microsoft-custom-wsl2+-1
+Architecture: amd64
+Maintainer: avatar <avatar@pallas>
+Installed-Size: 45745
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-5.10.16.3-microsoft-custom-wsl2+/linux-headers-5.10.16.3-microsoft-custom-wsl2+_5.10.16.3-microsoft-custom-wsl2+-1_amd64.deb
+Size: 7686060
+SHA256: d10c7c40445d03973612794072bfe443f62b56d98feee6fa37dcb710e8e43ddf
+SHA1: f315246e43b4737ece0fa8224f3708e6a6534332
+MD5sum: 5194e9f134b05509aeacdc5e2201e2b0
+Description: Linux kernel headers for 5.10.16.3-microsoft-custom-wsl2+ on amd64
+ This package provides kernel header files for 5.10.16.3-microsoft-custom-wsl2+ on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-5.10.16.3-microsoft-custom-wsl2+
+Source: linux-5.10.16.3-microsoft-custom-wsl2+
+Version: 5.10.16.3-microsoft-custom-wsl2+-1
+Architecture: amd64
+Maintainer: avatar <avatar@pallas>
+Installed-Size: 22376
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-5.10.16.3-microsoft-custom-wsl2+/linux-image-5.10.16.3-microsoft-custom-wsl2+_5.10.16.3-microsoft-custom-wsl2+-1_amd64.deb
+Size: 16850332
+SHA256: ad64dd57aa0f4f12fd4f2dfbe43a1406eea9734e716fdb66c0bc906a29d56478
+SHA1: 8ce38e5c2a8620453bb7900a9df4463f30186344
+MD5sum: 48b6ac5c2799df27a087d0e281692a50
+Description: Linux kernel, version 5.10.16.3-microsoft-custom-wsl2+
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 5.10.16.3-microsoft-custom-wsl2+.
+
+Package: linux-libc-dev
+Source: linux-5.10.16.3-microsoft-custom-wsl2+
+Version: 5.10.16.3-microsoft-custom-wsl2+-1
+Architecture: amd64
+Maintainer: avatar <avatar@pallas>
+Installed-Size: 5896
+Provides: linux-kernel-headers
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: devel
+Filename: pool/main/l/linux-5.10.16.3-microsoft-custom-wsl2+/linux-libc-dev_5.10.16.3-microsoft-custom-wsl2+-1_amd64.deb
+Size: 1135336
+SHA256: 46b5c7284e8c9f30d200028c4c35e036fb0ca3b822e14ccb0a253acc0b86d817
+SHA1: e5bd70ebb1b4a117deb573d54a27cb7932542a84
+MD5sum: 1b045809251be070d5794ff32a9ddbda
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
 Package: pulseaudio-dummy
 Version: 14.2-2
 Architecture: all
