@@ -17,6 +17,25 @@ Description: Linux kernel headers for 5.10.16.3-microsoft-custom-wsl2+ on amd64
  .
  This is useful for people who need to build external modules
 
+Package: linux-headers-5.10.16.3-s2-microsoft-custom-wsl2+
+Source: linux-5.10.16.3-s2-microsoft-custom-wsl2+
+Version: 5.10.16.3-s2-microsoft-custom-wsl2+-1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 45772
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-5.10.16.3-s2-microsoft-custom-wsl2+/linux-headers-5.10.16.3-s2-microsoft-custom-wsl2+_5.10.16.3-s2-microsoft-custom-wsl2+-1_amd64.deb
+Size: 7691816
+SHA256: dcbdb39d9a2a8a89b16d2603508a3422df2e09b8aa164b94d9f5e339b2f72fd7
+SHA1: 57695cd2dd1903c290c1f224b59a7cdf40524ecc
+MD5sum: 85867367b2abae0739b7925512f58006
+Description: Linux kernel headers for 5.10.16.3-s2-microsoft-custom-wsl2+ on amd64
+ This package provides kernel header files for 5.10.16.3-s2-microsoft-custom-wsl2+ on amd64
+ .
+ This is useful for people who need to build external modules
+
 Package: linux-image-5.10.16.3-microsoft-custom-wsl2+
 Source: linux-5.10.16.3-microsoft-custom-wsl2+
 Version: 5.10.16.3-microsoft-custom-wsl2+-1
@@ -35,22 +54,40 @@ Description: Linux kernel, version 5.10.16.3-microsoft-custom-wsl2+
  This package contains the Linux kernel, modules and corresponding other
  files, version: 5.10.16.3-microsoft-custom-wsl2+.
 
-Package: linux-libc-dev
-Source: linux-5.10.16.3-microsoft-custom-wsl2+
-Version: 5.10.16.3-microsoft-custom-wsl2+-1
+Package: linux-image-5.10.16.3-s2-microsoft-custom-wsl2+
+Source: linux-5.10.16.3-s2-microsoft-custom-wsl2+
+Version: 5.10.16.3-s2-microsoft-custom-wsl2+-1
 Architecture: amd64
-Maintainer: avatar <avatar@pallas>
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 22468
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-5.10.16.3-s2-microsoft-custom-wsl2+/linux-image-5.10.16.3-s2-microsoft-custom-wsl2+_5.10.16.3-s2-microsoft-custom-wsl2+-1_amd64.deb
+Size: 16911828
+SHA256: c0daa18e4cd65dff663e20ad9342578abc661f327fd04cd37921462279790f49
+SHA1: 26005c7a9f12824f459b032f692f8fab529868b0
+MD5sum: 7f5f4881029f42a7939760a62c7e9ab9
+Description: Linux kernel, version 5.10.16.3-s2-microsoft-custom-wsl2+
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 5.10.16.3-s2-microsoft-custom-wsl2+.
+
+Package: linux-libc-dev
+Source: linux-5.10.16.3-s2-microsoft-custom-wsl2+
+Version: 5.10.16.3-s2-microsoft-custom-wsl2+-1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
 Installed-Size: 5896
 Provides: linux-kernel-headers
 Multi-Arch: same
 Homepage: https://www.kernel.org/
 Priority: optional
 Section: devel
-Filename: pool/main/l/linux-5.10.16.3-microsoft-custom-wsl2+/linux-libc-dev_5.10.16.3-microsoft-custom-wsl2+-1_amd64.deb
-Size: 1135336
-SHA256: 46b5c7284e8c9f30d200028c4c35e036fb0ca3b822e14ccb0a253acc0b86d817
-SHA1: e5bd70ebb1b4a117deb573d54a27cb7932542a84
-MD5sum: 1b045809251be070d5794ff32a9ddbda
+Filename: pool/main/l/linux-5.10.16.3-s2-microsoft-custom-wsl2+/linux-libc-dev_5.10.16.3-s2-microsoft-custom-wsl2+-1_amd64.deb
+Size: 1135408
+SHA256: 2482f589f2f24180f1993d84619d269b328440a4bfa7c2c462c765b60f7f12a5
+SHA1: ca7ef71a648b4763398c764dbdb2a8a0e87e3f1c
+MD5sum: 38c51a37987ef4b2fae15f58bb045c92
 Description: Linux support headers for userspace development
  This package provides userspaces headers from the Linux kernel.  These headers
  are used by the installed headers for GNU glibc and other system libraries.
