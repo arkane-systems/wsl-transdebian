@@ -185,6 +185,24 @@ Description: periodically drops the caches, saving memory under Windows Subsyste
  Windows Subsystem for Linux, which would otherwise expand to use all WSL
  available memory.
 
+Package: wsl-share-fs
+Version: 0.1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 21
+Depends: systemd
+Homepage: https://github.com/arkane-systems/wsl-share-fs
+Priority: optional
+Section: contrib/misc
+Filename: pool/main/w/wsl-share-fs/wsl-share-fs_0.1_amd64.deb
+Size: 2612
+SHA256: 68b5f4d3d5b2a721cf44069bd85365d74e3fb79c890316fb2005f9905e500d60
+SHA1: b87e1dc85f59c02a639a6cb82c476b8ecfb6b745
+MD5sum: 5c7c4253e57af53cbf7076a4e65f2b4c
+Description: automatically mounts the root filesystem for cross-distro sharing
+ A systemd service and script which mounts the distro filesystem under /mnt/wsl,
+ enabling cross-distro sharing of it under Windows Subsystem for Linux.
+
 Package: xwayland-dummy
 Version: 2:1.20.11-1
 Architecture: all
