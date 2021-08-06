@@ -18,9 +18,7 @@ Deprecated (no longer updated) distributions include:
 
 As root (`sudo -s`), enter the following commands, after making sure you have lsb_release installed:
 
-```
-apt install apt-transport-https
-
+```ShellSession
 wget -O /etc/apt/trusted.gpg.d/wsl-transdebian.gpg https://arkane-systems.github.io/wsl-transdebian/apt/wsl-transdebian.gpg
 
 chmod a+r /etc/apt/trusted.gpg.d/wsl-transdebian.gpg
