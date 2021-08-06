@@ -43,4 +43,4 @@ To contribute packages to the wsl-transdebian repo, please fork this repository,
 
 You can see the source for this repository at:
 
-https://github.com/arkane-systems/wsl-transdebian
+[https://github.com/arkane-systems/wsl-transdebian](https://github.com/arkane-systems/wsl-transdebian)
