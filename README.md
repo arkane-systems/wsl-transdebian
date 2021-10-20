@@ -16,9 +16,18 @@ Deprecated (no longer updated) distributions include:
 
 Please note that this list of currently supported distributions reflects only those which I have tested myself and as such am prepared to support. I don't have time to test against all other possibilities. This is not, of course, to say that any package posted here won't work on unlisted Ubuntu distributions or other Debian derivatives; merely that not having tested it myself, I'm not going to advertise that it _does_ by shipping a package entailed to that distribution. You will need to manually adjust the created `sources.list` file to use the most compatible distribution.
 
+## Prerequisite
+
+Make sure you have lsb_release installed
+
+As root (`sudo -s`), enter the following commands:
+```
+apt install lsb_release
+```
+
 ## Configuring the wsl-transdebian repo
 
-As root (`sudo -s`), enter the following commands, after making sure you have lsb_release installed:
+As root (`sudo -s`), enter the following commands:
 
 ```ShellSession
 wget -O /etc/apt/trusted.gpg.d/wsl-transdebian.gpg https://arkane-systems.github.io/wsl-transdebian/apt/wsl-transdebian.gpg
