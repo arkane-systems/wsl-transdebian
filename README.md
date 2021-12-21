@@ -22,7 +22,7 @@ Make sure you have lsb_release installed
 
 As root (`sudo -s`), enter the following commands:
 ```
-apt install lsb_release
+apt install lsb-release
 ```
 
 ## Configuring the wsl-transdebian repo
