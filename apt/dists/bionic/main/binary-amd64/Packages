@@ -204,19 +204,19 @@ Description: quick way into a systemd "bottle" under Windows Subsystem for Linux
  of systemd within a WSL distro.
 
 Package: wsl-drop-caches
-Version: 0.4
+Version: 0.5
 Architecture: amd64
 Maintainer: Alistair Young <avatar@arkane-systems.net>
 Installed-Size: 24
 Depends: systemd, python3, python3-psutil
-Homepage: https://github.com/arkane-systems/wsl-drop-caches
+Homepage: https://github.com/arkane-systems/wsl-drop-cache
 Priority: optional
 Section: contrib/misc
-Filename: pool/main/w/wsl-drop-caches/wsl-drop-caches_0.4_amd64.deb
-Size: 3844
-SHA256: 5226af6e87b2eb3646af3a03f111206ac2f45ce09d04341803c7997eaa35b3cc
-SHA1: 151b6b31f77be8851c636ddda6aa375424d4ff42
-MD5sum: e64b2481de7fa226cb5bfea21577c0da
+Filename: pool/main/w/wsl-drop-caches/wsl-drop-caches_0.5_amd64.deb
+Size: 3884
+SHA256: 000d7609c28ba26bdd1d0b2428315e6b692b66da7f390c2562551a9f3b393570
+SHA1: 018256310104c893b4dd02908c14f60a1fbad622
+MD5sum: b5beed62ad48c5efd332ef16a2400aab
 Description: periodically drops the caches, saving memory under Windows Subsystem for Linux
  A python script which periodically drops the caches, which saves memory under
  Windows Subsystem for Linux, which would otherwise expand to use all WSL
