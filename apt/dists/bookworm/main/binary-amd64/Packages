@@ -1,22 +1,3 @@
-Package: linux-headers-5.10.43.3-microsoft-custom-wsl2+
-Source: linux-5.10.43.3-microsoft-custom-wsl2+
-Version: 5.10.43.3-microsoft-custom-wsl2+-1
-Architecture: amd64
-Maintainer: Alistair Young <avatar@arkane-systems.net>
-Installed-Size: 45959
-Homepage: https://www.kernel.org/
-Priority: optional
-Section: kernel
-Filename: pool/main/l/linux-5.10.43.3-microsoft-custom-wsl2+/linux-headers-5.10.43.3-microsoft-custom-wsl2+_5.10.43.3-microsoft-custom-wsl2+-1_amd64.deb
-Size: 7729956
-SHA256: 10127a08406af038c1269f3bfcb22d7e1c3984c5ae4ddc582a585ed5a5764570
-SHA1: 1e384709118d0fbb1c4d54e53731e386795c4e61
-MD5sum: f01cfd2e696d548c5a1911f0505ee225
-Description: Linux kernel headers for 5.10.43.3-microsoft-custom-wsl2+ on amd64
- This package provides kernel header files for 5.10.43.3-microsoft-custom-wsl2+ on amd64
- .
- This is useful for people who need to build external modules
-
 Package: linux-headers-5.10.60.1-20211013-1-microsoft-custom-wsl2+
 Source: linux-5.10.60.1-20211013-1-microsoft-custom-wsl2+
 Version: 5.10.60.1-20211013-1-microsoft-custom-wsl2+-1
@@ -54,24 +35,6 @@ Description: Linux kernel headers for 5.10.93.2-20220208-1-microsoft-custom-wsl2
  This package provides kernel header files for 5.10.93.2-20220208-1-microsoft-custom-wsl2+ on amd64
  .
  This is useful for people who need to build external modules
-
-Package: linux-image-5.10.43.3-microsoft-custom-wsl2+
-Source: linux-5.10.43.3-microsoft-custom-wsl2+
-Version: 5.10.43.3-microsoft-custom-wsl2+-1
-Architecture: amd64
-Maintainer: Alistair Young <avatar@arkane-systems.net>
-Installed-Size: 22503
-Homepage: https://www.kernel.org/
-Priority: optional
-Section: kernel
-Filename: pool/main/l/linux-5.10.43.3-microsoft-custom-wsl2+/linux-image-5.10.43.3-microsoft-custom-wsl2+_5.10.43.3-microsoft-custom-wsl2+-1_amd64.deb
-Size: 16938184
-SHA256: cb06bc12e3081fbe62aa7a9ff93fb7385b5976cdd60d867b9475806a5226f1df
-SHA1: ca717992746ad72a24d5bf8b2716782ddb26b65d
-MD5sum: 26f4002d05265cb57ec4971a82c3d9e5
-Description: Linux kernel, version 5.10.43.3-microsoft-custom-wsl2+
- This package contains the Linux kernel, modules and corresponding other
- files, version: 5.10.43.3-microsoft-custom-wsl2+.
 
 Package: linux-image-5.10.60.1-20211013-1-microsoft-custom-wsl2+
 Source: linux-5.10.60.1-20211013-1-microsoft-custom-wsl2+
