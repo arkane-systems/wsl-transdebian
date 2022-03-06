@@ -111,19 +111,19 @@ Description: Dummy pulseaudio package.
  Hacks dependencies to allow non-install under WSLg
 
 Package: systemd-genie
-Version: 2.1
+Version: 2.2
 Architecture: amd64
 Maintainer: Alistair Young <avatar@arkane-systems.net>
-Installed-Size: 91
-Depends: libc6 (>= 2.2.5), dbus, policykit-1, daemonize, systemd (>= 232-25), python3 (>= 3.7), python3-pip, systemd-container (>= 232-25), gawk
+Installed-Size: 100
+Depends: libc6 (>= 2.2.5), dbus, policykit-1, daemonize, systemd (>= 232-25), python3 (>= 3.7), python3-pip, python3-psutil, systemd-container (>= 232-25), gawk
 Homepage: https://github.com/arkane-systems/genie
 Priority: optional
 Section: contrib/misc
-Filename: pool/main/s/systemd-genie/systemd-genie_2.1_amd64.deb
-Size: 24316
-SHA256: 4a480e079b2d0473b705b294f019283a7102a83a57ef154e28487c120226668c
-SHA1: 608456162e6ad41897207631b47fecf2ebc17036
-MD5sum: 8607116e8eedcdb2112ded6d42399e41
+Filename: pool/main/s/systemd-genie/systemd-genie_2.2_amd64.deb
+Size: 49996
+SHA256: 4704e0467347d12ef00ee58de862912eeab80d58b659def20066ac25260db7b0
+SHA1: 22fd287eef201aeaae451d9b7a71d144b2ef0792
+MD5sum: 0e55cf57553affdd7117d5d5e432f1ac
 Description: quick way into a systemd "bottle" under Windows Subsystem for Linux
  Automates the process of starting up, entering into, and shutting down
  a container within which systemd is pid 1, effectively enabling the use
