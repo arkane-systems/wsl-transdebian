@@ -1,0 +1,130 @@
+Package: linux-headers-5.10.93.2-20220208-1-microsoft-custom-wsl2+
+Source: linux-5.10.93.2-20220208-1-microsoft-custom-wsl2+
+Version: 5.10.93.2-20220208-1-microsoft-custom-wsl2+-1
+Architecture: amd64
+Maintainer: root <root@localhost>
+Installed-Size: 45802
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-5.10.93.2-20220208-1-microsoft-custom-wsl2+/linux-headers-5.10.93.2-20220208-1-microsoft-custom-wsl2+_5.10.93.2-20220208-1-microsoft-custom-wsl2+-1_amd64.deb
+Size: 7740968
+SHA256: 587a706bc496b47b37559ef25f20eb609de0e1f0c1c1451217f9b4673667ae3f
+SHA1: 5d762355aa04d770a837630d824649311bb11c81
+MD5sum: 418194e699d330e32d5b0d4e00afd625
+Description: Linux kernel headers for 5.10.93.2-20220208-1-microsoft-custom-wsl2+ on amd64
+ This package provides kernel header files for 5.10.93.2-20220208-1-microsoft-custom-wsl2+ on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-5.10.93.2-20220208-1-microsoft-custom-wsl2+
+Source: linux-5.10.93.2-20220208-1-microsoft-custom-wsl2+
+Version: 5.10.93.2-20220208-1-microsoft-custom-wsl2+-1
+Architecture: amd64
+Maintainer: root <root@localhost>
+Installed-Size: 22825
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-5.10.93.2-20220208-1-microsoft-custom-wsl2+/linux-image-5.10.93.2-20220208-1-microsoft-custom-wsl2+_5.10.93.2-20220208-1-microsoft-custom-wsl2+-1_amd64.deb
+Size: 17179452
+SHA256: f60e57e99cbd1c5a70e93a284c9ac7a94e72b7f986ffc39c5b1d95fe34bf9001
+SHA1: c613c4f1718242bbfe95c93692c3ddd97c989150
+MD5sum: fbbc41c4fd6aeef3f46d5b6c6b7211fc
+Description: Linux kernel, version 5.10.93.2-20220208-1-microsoft-custom-wsl2+
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 5.10.93.2-20220208-1-microsoft-custom-wsl2+.
+
+Package: linux-libc-dev
+Source: linux-5.10.93.2-20220208-1-microsoft-custom-wsl2+
+Version: 5.10.93.2-20220208-1-microsoft-custom-wsl2+-1
+Architecture: amd64
+Maintainer: root <root@localhost>
+Installed-Size: 5941
+Provides: linux-kernel-headers
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: devel
+Filename: pool/main/l/linux-5.10.93.2-20220208-1-microsoft-custom-wsl2+/linux-libc-dev_5.10.93.2-20220208-1-microsoft-custom-wsl2+-1_amd64.deb
+Size: 1142624
+SHA256: 3efad2b42bba760c43c94dc7c53c268706e05c5261853f103da1713ea8c60d19
+SHA1: 5a0980868e95053899f3638604afac894d098803
+MD5sum: 8548f50b3a3b4df035da12780eac3adc
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: pulseaudio-dummy
+Version: 14.2-2
+Architecture: all
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 9
+Provides: pulseaudio
+Multi-Arch: foreign
+Homepage: https//github.com/cerebrate/fake-packages
+Priority: optional
+Section: sound
+Filename: pool/main/p/pulseaudio-dummy/pulseaudio-dummy_14.2-2_all.deb
+Size: 2236
+SHA256: fd10f28bd1a44d92212b5d1f3f02a8ced091783fd7c0309dc8d153526e7f8b58
+SHA1: 021a5a81104fdecb8eb67632ea50ec28adfc386b
+MD5sum: 2e718230c7091bfb8634b3730edfe7f4
+Description: Dummy pulseaudio package.
+ Hacks dependencies to allow non-install under WSLg
+
+Package: wsl-drop-caches
+Version: 0.5
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 24
+Depends: systemd, python3, python3-psutil
+Homepage: https://github.com/arkane-systems/wsl-drop-cache
+Priority: optional
+Section: contrib/misc
+Filename: pool/main/w/wsl-drop-caches/wsl-drop-caches_0.5_amd64.deb
+Size: 3884
+SHA256: 000d7609c28ba26bdd1d0b2428315e6b692b66da7f390c2562551a9f3b393570
+SHA1: 018256310104c893b4dd02908c14f60a1fbad622
+MD5sum: b5beed62ad48c5efd332ef16a2400aab
+Description: periodically drops the caches, saving memory under Windows Subsystem for Linux
+ A python script which periodically drops the caches, which saves memory under
+ Windows Subsystem for Linux, which would otherwise expand to use all WSL
+ available memory.
+
+Package: wsl-share-fs
+Version: 0.1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 21
+Depends: systemd
+Homepage: https://github.com/arkane-systems/wsl-share-fs
+Priority: optional
+Section: contrib/misc
+Filename: pool/main/w/wsl-share-fs/wsl-share-fs_0.1_amd64.deb
+Size: 2612
+SHA256: 68b5f4d3d5b2a721cf44069bd85365d74e3fb79c890316fb2005f9905e500d60
+SHA1: b87e1dc85f59c02a639a6cb82c476b8ecfb6b745
+MD5sum: 5c7c4253e57af53cbf7076a4e65f2b4c
+Description: automatically mounts the root filesystem for cross-distro sharing
+ A systemd service and script which mounts the distro filesystem under /mnt/wsl,
+ enabling cross-distro sharing of it under Windows Subsystem for Linux.
+
+Package: xwayland-dummy
+Version: 2:1.20.11-1
+Architecture: all
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 9
+Provides: xwayland
+Multi-Arch: foreign
+Homepage: https://github.com/cerebrate/fake-packages
+Priority: optional
+Section: x11
+Filename: pool/main/x/xwayland-dummy/xwayland-dummy_1.20.11-1_all.deb
+Size: 2228
+SHA256: d7159571f22f3ba4f349903a4a4a896ae2ae0e65557d7d2ccb6159291d202612
+SHA1: d77d4826e3818bbaa42d9632062419f74f57c716
+MD5sum: 62ec5370f60fe04aa188b437bab65c7c
+Description: Dummy xwayland package.
+ Hacks dependencies to allow non-install under WSLg.
+

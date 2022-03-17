@@ -1,0 +1,5 @@
+Component: main
+Origin: ArkaneSystems
+Label: WSL Transdebian
+Architecture: source
+Description: WSL-specific packages hosted on the Arkane Systems github repository

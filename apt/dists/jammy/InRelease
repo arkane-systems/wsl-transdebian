@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Origin: ArkaneSystems
+Label: WSL Transdebian
+Codename: jammy
+Date: Thu, 17 Mar 2022 16:18:32 UTC
+Architectures: amd64
+Components: main
+Description: WSL-specific packages hosted on the Arkane Systems github repository
+MD5Sum:
+ a22c15e8299a279246d5565e87674a7d 5384 main/binary-amd64/Packages
+ f7b61b4c371e8aa2b27c419d037aabe9 1790 main/binary-amd64/Packages.gz
+ a2f3caedb64cd6fb7d0cb5f6bed4df32 163 main/binary-amd64/Release
+ 78e642b3f2f058f109e36468820e7c72 4362 main/source/Sources
+ 1adbf87386e8c062add63ce3963b66f1 1339 main/source/Sources.gz
+ d98f5a9c7aeb10035a4016358d9e9454 164 main/source/Release
+SHA1:
+ bf30be3c9c67711a4cf2a5f9c1da80d48fdf0046 5384 main/binary-amd64/Packages
+ 130ba6644aa628c5967a7e642d977a9d0915ce85 1790 main/binary-amd64/Packages.gz
+ d03000dff4b7f7a13deb756cbaa63dcc6f4c9536 163 main/binary-amd64/Release
+ b59613801621a91033f324af5afa2ea0b387070a 4362 main/source/Sources
+ 7dc19ac9611a86875e5d9cd819f1bf8019b8c694 1339 main/source/Sources.gz
+ 48f62b752773af3825c9beeb2c53b2b6987c998b 164 main/source/Release
+SHA256:
+ 2f2e51e3d55c3af5afe46bc2ecc88392c1b6767c9d04ef8e133a9dcf9072c143 5384 main/binary-amd64/Packages
+ 84e9a8c48d3a9b85294e79b9634fd49d30c7f09f16fb0075aa067695621ad861 1790 main/binary-amd64/Packages.gz
+ c562e878dcc6b169a20988934960aedd1dc7602263b1eb0a06f6d0529afc93c4 163 main/binary-amd64/Release
+ 6f14cecc719735c1c6375738fe08459bd6aa210a49ff9ff9b0a3f5136b56a43f 4362 main/source/Sources
+ eea51dba003ef41486e9921d03874650413b270fb216a8c34bdf5d2899337d1d 1339 main/source/Sources.gz
+ 7deaf2f6137cfa9222bcd65d367d7128929a724eb7fb2e1204725eebc41a6171 164 main/source/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEQ74zMj7dcSYDvubAQorRoLoHirsFAmIzX1kACgkQQorRoLoH
+irsQsA//ZKbR1ipM0ndqEezzEN1CcKUPFgC0TjoRwacwD17Mx+3qOUoi9WfHuLBG
+ngUgSvbeW/mFDCVeIk9/Eh1bwljXUIk3g0xZKSrKwXztwljfsGTi+gQCmcCkvrAW
+RwRU2Wq142K5n2ckGPI1BMS9DbsSGitmTjAiRThnbC6nOiuLMyzEVxrEb3i5x1dn
+b+CDeNv5/hUPCUc7e+07B6AXhRK56MlwEzceE8HqvzLXpDEZnt8yG60XfMIYODJN
+CO4XNSDd8q8q/7I9wZoloub0j3bq3ACKwNunwGdZkfPCpl3eHpuCPi3sWIT+xllU
+hDj0iqekbphIRtaNGDdFVM+cMZjNXCSpb+gGJ97xnFrooMMjoXlYx/vg5tl3nhAj
+SRHFCQiYFPEMN/E+cN3qZOUYUMbPzT+tTduk7FJ3qxFkaYIZ/u6v3g2CpaZpvgB5
+y8g2IT7LMgAX6S3Hcg/0m73EaGFsxsTG8fN5wogs55SeG8277nPQ0UpC06XCKbv6
+K1M9jO4ESICgJUiugFQMGwvQXG7xeAFMmuZcoAvYVqsocJ2RuVWyjI3rxEHU+U+s
+ttA16vjik39N8gGuv+qTmNZGmoCmDQ4jOYBPCVh3Sa1WIL/jRTDalX81XOR+1xV2
+PZ9CU+hWIaPPIpFuEOgvTsFFKHkfFGzLp04JU0FfexhG6e+1U6M=
+=zPYq
+-----END PGP SIGNATURE-----
