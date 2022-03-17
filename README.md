@@ -7,8 +7,9 @@ This includes packages for multiple distributions which use apt packages, not me
  * Debian 11 _bullseye_
  * Debian 12 _bookworm_
  * Debian (testing) _sid_
- * Ubuntu _focal_
- * Ubuntu _bionic_
+ * Ubuntu 18.04 LTS _bionic_
+ * Ubuntu 20.04 LTS _focal_
+ * Ubuntu 22.04 LTS _jammy_
  
 Deprecated (no longer updated) distributions include:
 
@@ -21,6 +22,7 @@ Please note that this list of currently supported distributions reflects only th
 Make sure you have lsb_release installed
 
 As root (`sudo -s`), enter the following commands:
+
 ```
 apt install lsb-release
 ```
