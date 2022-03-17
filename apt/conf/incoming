@@ -2,5 +2,5 @@ Name: default
 IncomingDir: incoming
 TempDir: tmp
 Options: multiple_distributions
-Allow: buster bullseye bookworm sid focal bionic
+Allow: buster bullseye bookworm sid bionic focal jammy
 Cleanup: on_deny on_error
