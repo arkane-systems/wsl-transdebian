@@ -1,28 +1,37 @@
 Origin: ArkaneSystems
 Label: WSL Transdebian
 Codename: focal
-Date: Sun, 06 Mar 2022 19:45:41 UTC
-Architectures: amd64
+Date: Tue, 22 Mar 2022 14:36:46 UTC
+Architectures: amd64 arm64
 Components: main
 Description: WSL-specific packages hosted on the Arkane Systems github repository
 MD5Sum:
- c1766cebce6f8f471efdf2a7d4b25878 8147 main/binary-amd64/Packages
- 6b93bed59b7a52fbb4dc63b975f531f3 2381 main/binary-amd64/Packages.gz
+ 7a4fcfac73061ed065b39c4b73c46e00 8147 main/binary-amd64/Packages
+ fe6494f297d50f27d0a73586f11cfac2 2376 main/binary-amd64/Packages.gz
  a2f3caedb64cd6fb7d0cb5f6bed4df32 163 main/binary-amd64/Release
- 71d0b0ea0261901c9a87a1048e447adc 5386 main/source/Sources
- b718adaf7d06f88d6207549a2794068b 1597 main/source/Sources.gz
+ 3aa0f8e66936003a1d02fc975cccccfe 2049 main/binary-arm64/Packages
+ 2179cfb429f7f16bac092ae6baa40661 960 main/binary-arm64/Packages.gz
+ 1c5580ac370d974d9b07630e319bf974 163 main/binary-arm64/Release
+ b3e90ccf05ab889bfc9162ad8a6e3582 5398 main/source/Sources
+ 749529eb65aca68cfdab496455b23890 1615 main/source/Sources.gz
  d98f5a9c7aeb10035a4016358d9e9454 164 main/source/Release
 SHA1:
- 0aae6ab97198d4b4c2d1aa0b09cede42a8338b40 8147 main/binary-amd64/Packages
- 38bd0219e0e57f544c3eafc1bd4d5a71b1fc2b28 2381 main/binary-amd64/Packages.gz
+ bb804d74d47cd348dccbecd68b55aa6224382b00 8147 main/binary-amd64/Packages
+ 14b2c39c5cbd9e456a83a9602ce74cf5f66c043b 2376 main/binary-amd64/Packages.gz
  d03000dff4b7f7a13deb756cbaa63dcc6f4c9536 163 main/binary-amd64/Release
- 5415f5ec299607dbd5b8a3368b9bc2e422dbea84 5386 main/source/Sources
- 08ca9a844b19314730ccbe0291ef9001ff3e1384 1597 main/source/Sources.gz
+ 9897e8b220b70e5c008b4c4b4b60b2b589a1334e 2049 main/binary-arm64/Packages
+ 2e286f60fe73883814ebde107049e255bb49cd1a 960 main/binary-arm64/Packages.gz
+ de30937a3fee2b33aa12c9b40abd0b4a4fef7851 163 main/binary-arm64/Release
+ ace1592328e80cd8aeeec0ea83bdd94e2a3efdcb 5398 main/source/Sources
+ ba2b72c6fc9262d8787e0e1f51be567af2fff45b 1615 main/source/Sources.gz
  48f62b752773af3825c9beeb2c53b2b6987c998b 164 main/source/Release
 SHA256:
- a18966e8ce9449389d93c590a92085d65ec06b98bf42e10410e228497f3619f9 8147 main/binary-amd64/Packages
- cb0e9fcc24ce65176e8993da58859811904fc7aac0812ca3c88acbc8d58b21e5 2381 main/binary-amd64/Packages.gz
+ 904b0e88823a3604e56a64042a269fc837c385a9ab1664e73eaa1e794d5d61c2 8147 main/binary-amd64/Packages
+ 9a915c977b6b55296949e0c444b9c570aa47cc7f828f446625ad22193c160640 2376 main/binary-amd64/Packages.gz
  c562e878dcc6b169a20988934960aedd1dc7602263b1eb0a06f6d0529afc93c4 163 main/binary-amd64/Release
- d4559e4e83350b0675d740382ee8c23a20f1ccc282fc2f9dc02e19e4405be079 5386 main/source/Sources
- f6b93e6caa9a146f9cabc8ebd86c91ab5372e382a74e32de892aa3617d6a63dc 1597 main/source/Sources.gz
+ 6c501df258489da8ba8273dfa4d622c0084011ebe3ed8c915eb025a96bcbce18 2049 main/binary-arm64/Packages
+ 912e322b80ec5a4d5758b50fa1339e5a260d9e2a2d111e25defc786a6dfcb507 960 main/binary-arm64/Packages.gz
+ cd4ed3c124eb03db7960e17f1291a2952c99a616c88914db73193c7a341738de 163 main/binary-arm64/Release
+ 425221e3ab5bcb1041145ed8af50615cbb3f5ef821b5532b53b2d8ef76352d89 5398 main/source/Sources
+ ec6d5ed22ffe8329bb5df20faa40ee2b96c4a9ff37f621be33f00185b6d40d13 1615 main/source/Sources.gz
  7deaf2f6137cfa9222bcd65d367d7128929a724eb7fb2e1204725eebc41a6171 164 main/source/Release

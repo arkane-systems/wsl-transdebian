@@ -1,0 +1,55 @@
+Package: pulseaudio-dummy
+Version: 14.2-2
+Architecture: all
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 9
+Provides: pulseaudio
+Multi-Arch: foreign
+Homepage: https//github.com/cerebrate/fake-packages
+Priority: optional
+Section: sound
+Filename: pool/main/p/pulseaudio-dummy/pulseaudio-dummy_14.2-2_all.deb
+Size: 2236
+SHA256: fd10f28bd1a44d92212b5d1f3f02a8ced091783fd7c0309dc8d153526e7f8b58
+SHA1: 021a5a81104fdecb8eb67632ea50ec28adfc386b
+MD5sum: 2e718230c7091bfb8634b3730edfe7f4
+Description: Dummy pulseaudio package.
+ Hacks dependencies to allow non-install under WSLg
+
+Package: systemd-genie
+Version: 2.3
+Architecture: arm64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 92
+Depends: dbus, policykit-1, daemonize, systemd (>= 232-25), python3 (>= 3.7), python3-pip, python3-psutil, systemd-container (>= 232-25), gawk
+Homepage: https://github.com/arkane-systems/genie
+Priority: optional
+Section: contrib/misc
+Filename: pool/main/s/systemd-genie/systemd-genie_2.3_arm64.deb
+Size: 50896
+SHA256: fbf7a45d675ddf44a23c5c41fa62e165913d9b9a76616b6c7afefd1200d810c5
+SHA1: c38732f5ec1955b8b2c44d37817f7d097b863a98
+MD5sum: 6291d330f775856ffdfecf470322865a
+Description: quick way into a systemd "bottle" under Windows Subsystem for Linux
+ Automates the process of starting up, entering into, and shutting down
+ a container within which systemd is pid 1, effectively enabling the use
+ of systemd within a WSL distro.
+
+Package: xwayland-dummy
+Version: 2:1.20.11-1
+Architecture: all
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 9
+Provides: xwayland
+Multi-Arch: foreign
+Homepage: https://github.com/cerebrate/fake-packages
+Priority: optional
+Section: x11
+Filename: pool/main/x/xwayland-dummy/xwayland-dummy_1.20.11-1_all.deb
+Size: 2228
+SHA256: d7159571f22f3ba4f349903a4a4a896ae2ae0e65557d7d2ccb6159291d202612
+SHA1: d77d4826e3818bbaa42d9632062419f74f57c716
+MD5sum: 62ec5370f60fe04aa188b437bab65c7c
+Description: Dummy xwayland package.
+ Hacks dependencies to allow non-install under WSLg.
+
