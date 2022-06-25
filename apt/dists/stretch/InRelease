@@ -4,14 +4,17 @@ Hash: SHA256
 Origin: ArkaneSystems
 Label: WSL Transdebian
 Codename: stretch
-Date: Tue, 23 Feb 2021 19:48:12 UTC
-Architectures: amd64
+Date: Sat, 25 Jun 2022 21:42:21 UTC
+Architectures: amd64 arm64
 Components: main
 Description: WSL-specific packages hosted on the Arkane Systems github repository
 MD5Sum:
  2cf37e5c27753bf70d76e91096a9e131 855 main/binary-amd64/Packages
  97ddf3e62a55fb6dde4aeb93ece756e7 579 main/binary-amd64/Packages.gz
  a2f3caedb64cd6fb7d0cb5f6bed4df32 163 main/binary-amd64/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 main/binary-arm64/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 main/binary-arm64/Packages.gz
+ 1c5580ac370d974d9b07630e319bf974 163 main/binary-arm64/Release
  31c9b15ddab30cf8d96dfb6ad7608703 1044 main/source/Sources
  91239eb26626ffb0c5d1e9fe827f3986 563 main/source/Sources.gz
  d98f5a9c7aeb10035a4016358d9e9454 164 main/source/Release
@@ -19,6 +22,9 @@ SHA1:
  a5fd2a38105a50547b7e81b71d2f6f6ab5808085 855 main/binary-amd64/Packages
  e087f3895722a15b58f88b893091ca40b9a11c21 579 main/binary-amd64/Packages.gz
  d03000dff4b7f7a13deb756cbaa63dcc6f4c9536 163 main/binary-amd64/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-arm64/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-arm64/Packages.gz
+ de30937a3fee2b33aa12c9b40abd0b4a4fef7851 163 main/binary-arm64/Release
  d5be7ea73b19afbc843c18cdc026be985efc0799 1044 main/source/Sources
  1d97fb4aa3e4360e3419a73be4ad294b7b3e04a2 563 main/source/Sources.gz
  48f62b752773af3825c9beeb2c53b2b6987c998b 164 main/source/Release
@@ -26,22 +32,25 @@ SHA256:
  5cb11cc5ab171d4084bc6243e7ed454c6b524750841f66bb489c2ebfaa36c08f 855 main/binary-amd64/Packages
  c6a5574286401b57b88959820274998b65fc88d25fab82bdc17d4825928101d0 579 main/binary-amd64/Packages.gz
  c562e878dcc6b169a20988934960aedd1dc7602263b1eb0a06f6d0529afc93c4 163 main/binary-amd64/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-arm64/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-arm64/Packages.gz
+ cd4ed3c124eb03db7960e17f1291a2952c99a616c88914db73193c7a341738de 163 main/binary-arm64/Release
  722f68d50c3375651611429ba8a1f106dccb2743e204728729495eba95da69fe 1044 main/source/Sources
  73317c3a3f4d721e1d55f5c45a683e9474498e3f0e1be367a3cc29b8497958f3 563 main/source/Sources.gz
  7deaf2f6137cfa9222bcd65d367d7128929a724eb7fb2e1204725eebc41a6171 164 main/source/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEQ74zMj7dcSYDvubAQorRoLoHirsFAmA1W/wACgkQQorRoLoH
-irsmihAAtvQUeMukNBuhCdMJHrjCEzF3hIRR8r2qPHd6aNVZtaY9K2Eqqkh5aXoY
-YZ2C4VL3k5og3Y8JNbbl/YoMO9cepKlRxbPf4PLTB2TMxJWzEWYUC3zdFhXJnCQ2
-4xHVV6w++Dz3H+KmLVCL+exaPU00by/qp+RS0xCOrd+hV/lSrPAFcxHFUVG1RPp+
-xTmTfBxMh4DuVRa20fOeYx+SHOwDbupNwDFTYHXzq++b/Md6HOm5A1sflDSQoNB6
-PEzImqmPv9aIJYLhVHNGOsnTEXvTXFIuKpThE7nYAutzNMbwLXA/tzMHZoTBDx42
-MEy2ZNTo7JH4wxw+J+bVJM3I/5sCZ2UvF09jFTXPhCjRmZDMDh3FvFHSKZSiEbzi
-5uxJFjuQysvvyC9CWW7PWacxD0FB5+pm+gI/0vLKIlwPPz68GuuCrLdjM+3Fm7Ie
-s9E0L/ZJL5jLFRvxMJmVcLvdM3nz/TW/qXswypCh4++E7fUSLq00V/yilKY+gIUR
-3hI0J0KbcPA5FaVdQvKt2bWgEh8bwMksblUwM30bfadZekXBDYhj4trFhMJlsjBE
-EG0lTV358EhZ6/8l1kEYINN75VNAR1kO9kXqatmLIoOGlg1Pa06FYVea6oiVH1f3
-sgKedx9QQrXXGubl0XfJNfACCyrvPFfhqxvgda6Yejlk/rcRJRk=
-=aBgX
+iQIzBAEBCAAdFiEEQ74zMj7dcSYDvubAQorRoLoHirsFAmK3gT0ACgkQQorRoLoH
+irsXjRAAqpiWOLe3gNRnvLqicBLaxDSAXDgmpZL+SeLolkzt6OfBaykBofZAxoNC
+zKK+nlIu/v3hZrB45Hns2gUC9aYbcZX9Yg1iUp3LkmmmB+t8SEmRLLWEIDNFXL8V
+HjDAZ0p1PTIbKh4YV4exnuXmFpnrZM5CouHXL12dX+XIhEGdpYURk+IvezfU+dA6
+lucNiQ0n3M07TiFVJjr7f4sHhwQ9EErtbSvQaIPLKL27I68LvVTA2Oz2hI2q/fUq
+Pp4WmhA4glgcTTEbLwweLM2Y+CSi8G3l5qV1syBMrPJ9WeyPg4jvok5O8SZm2Rvz
+Lx8Dl0P65ABWHfjBDEWDyFCIWU7XNRNd5sku0xlnOfAHY/8LDc4IipNlD7oqIZGN
+KlnjMdRbM2ZrqmlCqiY6qY/2IaDKKEfN3fvMV7eNtccBYD42B0jYac0v/WFTpgfF
+JmsvJCcUAjd+o0hTZBllCvsLvridtBLGHMVbQPaXBMlGUnyQW/88wOY93HYnOXCe
+0j2btDwkByWDMbc2sF+7ruYpbSXwgeseBqJNiDrxpI2j+ebtpizVLqyroN4Sn6jB
+bw91se6aaSSKDGazsX4Gd/KU3U8caCr+nk1JqR+3+WArMdEGz0td/SxzkRIlg4oK
+u8jye5vJRuC55+EXddSK/QV5kk4wQMgjT7gqSev+wp5amM8RUBY=
+=l6KB
 -----END PGP SIGNATURE-----
