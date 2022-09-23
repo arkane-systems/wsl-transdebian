@@ -1,3 +1,23 @@
+Package: bottle-imp
+Version: 0.3
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 66
+Depends: libc6 (>= 2.34), systemd (>= 232-25), python3 (>= 3.7), python3-pip, python3-psutil, systemd-container (>= 232-25)
+Conflicts: systemd-genie
+Homepage: https://github.com/arkane-systems/bottle-imp
+Priority: optional
+Section: contrib/misc
+Filename: pool/main/b/bottle-imp/bottle-imp_0.3_amd64.deb
+Size: 13536
+SHA256: a1465769917fcf6f7dbd3f62df177a2788dad4c5bb4b44ae752b48d8988bddee
+SHA1: 396e258e78dab5dfcc67e17c7c6e3b17c86ea016
+MD5sum: 1c2b65ba72abe840a16a39a02bc2b8d5
+Description: helper for native systemd support under WSL
+ Fixes some secondary facilities and allows easy access to a user session
+ when systemd is run under Windows Subsystem for Linux using its native
+ support. A spinoff of system-genie.
+
 Package: pulseaudio-dummy
 Version: 14.2-2
 Architecture: all
