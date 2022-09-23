@@ -1,0 +1,236 @@
+ dpkg-buildpackage -us -uc -ui -aarm64 -b
+dpkg-buildpackage: info: source package systemd-genie
+dpkg-buildpackage: info: source version 2.5
+dpkg-buildpackage: info: source distribution bullseye bookworm sid focal jammy
+dpkg-buildpackage: info: source changed by Alistair Young <avatar@arkane-systems.net>
+dpkg-architecture: warning: specified GNU system type aarch64-linux-gnu does not match CC system type x86_64-linux-gnu, try setting a correct CC environment variable
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture arm64
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+	rm -f debian/systemd-genie.debhelper.log
+   debian/rules override_dh_auto_clean
+make[1]: Entering directory '/home/runner/work/genie/genie'
+make internal-clean
+make[2]: Entering directory '/home/runner/work/genie/genie'
+make -C binsrc clean
+make[3]: Entering directory '/home/runner/work/genie/genie/binsrc'
+make -C genie-wrapper clean
+make[4]: Entering directory '/home/runner/work/genie/genie/binsrc/genie-wrapper'
+rm -f genie
+make[4]: Leaving directory '/home/runner/work/genie/genie/binsrc/genie-wrapper'
+rm -f out/runinwsl
+rm -f out/genie
+make[3]: Leaving directory '/home/runner/work/genie/genie/binsrc'
+make[2]: Leaving directory '/home/runner/work/genie/genie'
+make[1]: Leaving directory '/home/runner/work/genie/genie'
+   dh_autoreconf_clean
+   dh_clean
+	rm -f debian/debhelper-build-stamp
+	rm -rf debian/.debhelper/
+	rm -f -- debian/systemd-genie.substvars debian/systemd-genie.postinst.debhelper debian/files
+	rm -fr -- debian/systemd-genie/ debian/tmp/
+	find .  \( \( \
+		\( -path .\*/.git -o -path .\*/.svn -o -path .\*/.bzr -o -path .\*/.hg -o -path .\*/CVS -o -path .\*/.pc -o -path .\*/_darcs \) -prune -o -type f -a \
+	        \( -name '#*#' -o -name '.*~' -o -name '*~' -o -name DEADJOE \
+		 -o -name '*.orig' -o -name '*.rej' -o -name '*.bak' \
+		 -o -name '.*.orig' -o -name .*.rej -o -name '.SUMS' \
+		 -o -name TAGS -o \( -path '*/.deps/*' -a -name '*.P' \) \
+		\) -exec rm -f {} + \) -o \
+		\( -type d -a -name autom4te.cache -prune -exec rm -rf {} + \) \)
+ debian/rules build
+dh build
+   dh_testdir
+   dh_update_autotools_config
+   dh_autoreconf
+   dh_auto_configure
+   debian/rules override_dh_auto_build
+make[1]: Entering directory '/home/runner/work/genie/genie'
+make build-binaries
+make[2]: Entering directory '/home/runner/work/genie/genie'
+make -C binsrc
+make[3]: Entering directory '/home/runner/work/genie/genie/binsrc'
+mkdir -p out
+make -C genie-wrapper
+make[4]: Entering directory '/home/runner/work/genie/genie/binsrc/genie-wrapper'
+aarch64-linux-gnu-gcc genie.c -o genie
+make[4]: Leaving directory '/home/runner/work/genie/genie/binsrc/genie-wrapper'
+mkdir -p out
+python3 -m zipapp -o out/runinwsl -p "/usr/bin/env python3" -c runinwsl
+mkdir -p out
+python3 -m pip install -r genie/requirements.txt --target genie --upgrade
+Collecting git+https://github.com/zalando/python-nsenter@b7fd78fef24c456d88130c75fe734417728e97e8 (from -r genie/requirements.txt (line 1))
+  Cloning https://github.com/zalando/python-nsenter (to revision b7fd78fef24c456d88130c75fe734417728e97e8) to /tmp/pip-req-build-qjhi3z41
+  Running command git clone -q https://github.com/zalando/python-nsenter /tmp/pip-req-build-qjhi3z41
+Processing /home/runner/.cache/pip/wheels/40/c0/db/acd958667ebe87125f251333f3b1deef65abc6b755a87f8852/python_hosts-1.0.3-py3-none-any.whl
+Building wheels for collected packages: nsenter
+  Building wheel for nsenter (setup.py): started
+  Building wheel for nsenter (setup.py): finished with status 'done'
+  Created wheel for nsenter: filename=nsenter-0.3-py3-none-any.whl size=5506 sha256=2f11802915c4a3591dbf771a8f27ba2f3c1aa0982971e867e039ea6420626afd
+  Stored in directory: /home/runner/.cache/pip/wheels/86/da/7f/d874223604671cc2425ffb58c848947ce898fe66a7d6fcab19
+Successfully built nsenter
+Installing collected packages: python-hosts, nsenter
+Successfully installed nsenter-0.3 python-hosts-1.0.3
+python3 -m zipapp -o out/genie -p "/usr/bin/env python3" -c genie
+make[3]: Leaving directory '/home/runner/work/genie/genie/binsrc'
+make[2]: Leaving directory '/home/runner/work/genie/genie'
+make[1]: Leaving directory '/home/runner/work/genie/genie'
+   dh_auto_test
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+	rm -f -- debian/systemd-genie.substvars
+	rm -fr -- debian/.debhelper/generated/systemd-genie/ debian/systemd-genie/ debian/tmp/
+   dh_installdirs
+   debian/rules override_dh_auto_install
+make[1]: Entering directory '/home/runner/work/genie/genie'
+make internal-debian-package
+make[2]: Entering directory '/home/runner/work/genie/genie'
+mkdir -p debian/systemd-genie
+make[3]: Entering directory '/home/runner/work/genie/genie'
+# Binaries.
+mkdir -p "debian/systemd-genie/usr/bin"
+install -Dm 6755 -o root "binsrc/genie-wrapper/genie" -t "debian/systemd-genie/usr/bin"
+install -Dm 0755 -o root "binsrc/out/genie" -t "debian/systemd-genie/usr/lib/genie"
+install -Dm 0755 -o root "binsrc/out/runinwsl" -t "debian/systemd-genie/usr/lib/genie"
+# Environment generator.
+install -Dm 0755 -o root "othersrc/scripts/80-genie-envar.sh" -t "debian/systemd-genie/usr/lib/genie"
+# Runtime dir mapping
+install -Dm 0755 -o root "othersrc/scripts/map-user-runtime-dir.sh" -t "debian/systemd-genie/usr/lib/genie"
+install -Dm 0755 -o root "othersrc/scripts/unmap-user-runtime-dir.sh" -t "debian/systemd-genie/usr/lib/genie"
+# Configuration file.
+install -Dm 0644 -o root "othersrc/etc/genie.ini" -t "debian/systemd-genie/etc"
+# Unit files.
+install -Dm 0644 -o root "othersrc/lib-systemd-system/user-runtime-dir@.service.d/override.conf" -t "debian/systemd-genie/usr/lib/systemd/system/user-runtime-dir@.service.d"
+# tmpfiles.d
+install -Dm 0644 -o root "othersrc/usr-lib/tmpfiles.d/wslg.conf" -t "debian/systemd-genie/usr/lib/tmpfiles.d"
+make[3]: Leaving directory '/home/runner/work/genie/genie'
+make[2]: Leaving directory '/home/runner/work/genie/genie'
+make[1]: Leaving directory '/home/runner/work/genie/genie'
+   dh_install
+	install -d debian/.debhelper/generated/systemd-genie
+   dh_installdocs
+	install -d debian/systemd-genie/usr/share/doc/systemd-genie
+	cp --reflink=auto -a ./othersrc/docs/readme.md debian/systemd-genie/usr/share/doc/systemd-genie
+	chown -R 0:0 debian/systemd-genie/usr/share/doc
+	chmod -R u\+rw,go=rX debian/systemd-genie/usr/share/doc
+	install -p -m0644 debian/copyright debian/systemd-genie/usr/share/doc/systemd-genie/copyright
+   dh_installchangelogs
+	install -p -m0644 debian/changelog debian/systemd-genie/usr/share/doc/systemd-genie/changelog
+   dh_installexamples
+   dh_installman
+	install -d debian/systemd-genie/usr/share/man/man8/
+	install -p -m0644 ./othersrc/docs/genie.8 debian/systemd-genie/usr/share/man/man8/genie.8
+	man-recode --to-code UTF-8 --suffix .dh-new debian/systemd-genie/usr/share/man/man8/genie.8
+	mv debian/systemd-genie/usr/share/man/man8/genie.8.dh-new debian/systemd-genie/usr/share/man/man8/genie.8
+	chmod 0644 -- debian/systemd-genie/usr/share/man/man8/genie.8
+   dh_installcatalogs
+   dh_installcron
+   dh_installdebconf
+	install -d debian/systemd-genie/DEBIAN
+   dh_installemacsen
+   dh_installifupdown
+   dh_installinfo
+   dh_installinit
+   dh_installsystemd
+	[META] Append autosnippet "postinst-init-tmpfiles" to postinst [debian/systemd-genie.postinst.debhelper]
+   dh_installsystemduser
+   dh_installmenu
+   dh_installmime
+   dh_installmodules
+   dh_installlogcheck
+   dh_installlogrotate
+   dh_installpam
+   dh_installppp
+   dh_installudev
+   dh_installgsettings
+   dh_installinitramfs
+   dh_bugfiles
+   dh_ucf
+   dh_lintian
+	install -d debian/systemd-genie/usr/share/lintian/overrides
+	install -p -m0644 debian/systemd-genie.lintian-overrides debian/systemd-genie/usr/share/lintian/overrides/systemd-genie
+   dh_gconf
+dh_gconf: warning: Please migrate to dh_installgsettings; gconf + dh_gconf is scheduled for removal.
+   dh_icons
+   dh_perl
+   dh_usrlocal
+   dh_link
+	install -d debian/systemd-genie/usr/lib/systemd/user-environment-generators
+	rm -f debian/systemd-genie/usr/lib/systemd/user-environment-generators/80-genie-envar.sh
+	ln -s ../../genie/80-genie-envar.sh debian/systemd-genie/usr/lib/systemd/user-environment-generators/80-genie-envar.sh
+	install -d debian/systemd-genie/usr/lib/systemd/system-environment-generators
+	rm -f debian/systemd-genie/usr/lib/systemd/system-environment-generators/80-genie-envar.sh
+	ln -s ../../genie/80-genie-envar.sh debian/systemd-genie/usr/lib/systemd/system-environment-generators/80-genie-envar.sh
+   dh_installwm
+   dh_installxfonts
+   dh_strip_nondeterminism
+   dh_compress
+	cd debian/systemd-genie
+	chmod a-x usr/share/doc/systemd-genie/changelog usr/share/doc/systemd-genie/readme.md usr/share/man/man8/genie.8
+	gzip -9nf usr/share/doc/systemd-genie/changelog usr/share/doc/systemd-genie/readme.md usr/share/man/man8/genie.8
+	cd '/home/runner/work/genie/genie'
+   debian/rules override_dh_fixperms
+make[1]: Entering directory '/home/runner/work/genie/genie'
+dh_fixperms -Xgenie
+	find debian/systemd-genie ! \( -regex .\*genie.\* \) -print0 2>/dev/null | xargs -0r chown --no-dereference 0:0
+	find debian/systemd-genie ! -type l -a ! \( -regex .\*genie.\* \) -a -true -print0 2>/dev/null | xargs -0r chmod go=rX,u+rw,a-s
+	find debian/systemd-genie/usr/share/doc -type f -a ! \( -regex .\*genie.\* \) -a ! -regex 'debian/systemd-genie/usr/share/doc/[^/]*/examples/.*' -print0 2>/dev/null | xargs -0r chmod 0644
+	find debian/systemd-genie/usr/share/doc -type d -a ! \( -regex .\*genie.\* \) -a -true -print0 2>/dev/null | xargs -0r chmod 0755
+	find debian/systemd-genie/usr/share/man debian/systemd-genie/usr/share/lintian/overrides -type f -a ! \( -regex .\*genie.\* \) -a -true -print0 2>/dev/null | xargs -0r chmod 0644
+	find debian/systemd-genie -type f \( -name '*.so.*' -o -name '*.so' -o -name '*.la' -o -name '*.a' -o -name '*.js' -o -name '*.css' -o -name '*.scss' -o -name '*.sass' -o -name '*.jpeg' -o -name '*.jpg' -o -name '*.png' -o -name '*.gif' -o -name '*.cmxs' -o -name '*.node' \) -a ! \( -regex .\*genie.\* \) -a -true -print0 2>/dev/null | xargs -0r chmod 0644
+	find debian/systemd-genie/usr/bin -type f -a ! \( -regex .\*genie.\* \) -a -true -print0 2>/dev/null | xargs -0r chmod a+x
+	find debian/systemd-genie/usr/lib -type f -name '*.ali' -a ! \( -regex .\*genie.\* \) -a -true -print0 2>/dev/null | xargs -0r chmod uga-w
+make[1]: Leaving directory '/home/runner/work/genie/genie'
+   dh_missing
+   dh_dwz
+	dwz -- debian/systemd-genie/usr/bin/genie
+dwz: debian/systemd-genie/usr/bin/genie: .debug_info section not present
+	rm -f debian/systemd-genie.debhelper.log
+   debian/rules override_dh_strip
+make[1]: Entering directory '/home/runner/work/genie/genie'
+dh_strip --no-automatic-dbgsym
+	aarch64-linux-gnu-strip --remove-section=.comment --remove-section=.note debian/systemd-genie/usr/bin/genie
+make[1]: Leaving directory '/home/runner/work/genie/genie'
+   dh_makeshlibs
+	rm -f debian/systemd-genie/DEBIAN/shlibs
+   dh_installdeb
+	printf '#!/bin/sh\nset -e\n' > debian/systemd-genie/DEBIAN/postinst
+	cat debian/systemd-genie.postinst.debhelper >> debian/systemd-genie/DEBIAN/postinst
+	chmod 0755 -- debian/systemd-genie/DEBIAN/postinst
+	chown 0:0 -- debian/systemd-genie/DEBIAN/postinst
+	find debian/systemd-genie/etc -type f -printf '/etc/%P
+' | LC_ALL=C sort >> debian/systemd-genie/DEBIAN/conffiles
+	chmod 0644 -- debian/systemd-genie/DEBIAN/conffiles
+	chown 0:0 -- debian/systemd-genie/DEBIAN/conffiles
+   dh_gencontrol
+	echo misc:Depends= >> debian/systemd-genie.substvars
+	echo misc:Pre-Depends= >> debian/systemd-genie.substvars
+	dpkg-gencontrol -psystemd-genie -ldebian/changelog -Tdebian/systemd-genie.substvars -Pdebian/systemd-genie -UMulti-Arch
+dpkg-gencontrol: warning: Depends field of package systemd-genie: substitution variable ${shlibs:Depends} used, but is not defined
+	chmod 0644 -- debian/systemd-genie/DEBIAN/control
+	chown 0:0 -- debian/systemd-genie/DEBIAN/control
+   dh_md5sums
+	cd debian/systemd-genie >/dev/null && xargs -r0 md5sum | perl -pe 'if (s@^\\@@) { s/\\\\/\\/g; }' > DEBIAN/md5sums
+	chmod 0644 -- debian/systemd-genie/DEBIAN/md5sums
+	chown 0:0 -- debian/systemd-genie/DEBIAN/md5sums
+   dh_builddeb
+	dpkg-deb --build debian/systemd-genie ..
+dpkg-deb: building package 'systemd-genie' in '../systemd-genie_2.5_arm64.deb'.
+ dpkg-genbuildinfo --build=binary
+ dpkg-genchanges --build=binary >../systemd-genie_2.5_arm64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+Now running lintian systemd-genie_2.5_arm64.changes ...
+E: systemd-genie changes: bad-distribution-in-changes-file bookworm
+E: systemd-genie changes: bad-distribution-in-changes-file bullseye
+E: systemd-genie changes: bad-distribution-in-changes-file sid
+E: systemd-genie: missing-dependency-on-libc needed by usr/bin/genie
+E: systemd-genie changes: multiple-distributions-in-changes-file bullseye bookworm sid focal jammy
+W: systemd-genie: debian-changelog-line-too-long line 4
+W: systemd-genie: setuid-gid-binary usr/bin/genie 6755 root/root
+Finished running lintian.

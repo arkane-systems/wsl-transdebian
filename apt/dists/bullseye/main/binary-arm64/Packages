@@ -17,19 +17,20 @@ Description: Dummy pulseaudio package.
  Hacks dependencies to allow non-install under WSLg
 
 Package: systemd-genie
-Version: 2.4
+Version: 2.5
 Architecture: arm64
 Maintainer: Alistair Young <avatar@arkane-systems.net>
-Installed-Size: 93
+Installed-Size: 92
 Depends: dbus, policykit-1, daemonize, systemd (>= 232-25), python3 (>= 3.7), python3-pip, python3-psutil, systemd-container (>= 232-25), gawk
+Conflicts: bottle-imp
 Homepage: https://github.com/arkane-systems/genie
 Priority: optional
 Section: contrib/misc
-Filename: pool/main/s/systemd-genie/systemd-genie_2.4_arm64.deb
-Size: 53212
-SHA256: 776ff7ea250c105bb2873ff0b7350e3b6e5579dd9950f12b8754900fcbca9258
-SHA1: 5584392a7d437d7dec31c1a7bd5687e4a26a7d3e
-MD5sum: 58320c43922933df0deb07fc928d231a
+Filename: pool/main/s/systemd-genie/systemd-genie_2.5_arm64.deb
+Size: 53944
+SHA256: 8658033e825f4ee75b0031e73859da19f16e4cbe5e1f5d8d687db8db59452397
+SHA1: 6dbb9c292161bc1d3058865d2af5f03ce3ad4dd4
+MD5sum: 14332db55e7dad3d14fa1357bb58a7f6
 Description: quick way into a systemd "bottle" under Windows Subsystem for Linux
  Automates the process of starting up, entering into, and shutting down
  a container within which systemd is pid 1, effectively enabling the use
