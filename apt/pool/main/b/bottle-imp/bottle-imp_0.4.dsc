@@ -2,7 +2,7 @@ Format: 3.0 (native)
 Source: bottle-imp
 Binary: bottle-imp
 Architecture: amd64 arm64
-Version: 0.3
+Version: 0.4
 Maintainer: Alistair Young <avatar@arkane-systems.net>
 Homepage: https://github.com/arkane-systems/bottle-imp
 Standards-Version: 4.5.0
@@ -12,8 +12,8 @@ Build-Depends: debhelper-compat (= 12)
 Package-List:
  bottle-imp deb contrib/misc optional arch=amd64,arm64
 Checksums-Sha1:
- 1ed922c087dcd551cefb96b52f5a4ba19c4e94b9 10348 bottle-imp_0.3.tar.xz
+ 4ecfedc20f260c2e1e709bf6f0f322e80f888102 12320 bottle-imp_0.4.tar.xz
 Checksums-Sha256:
- d2acf8145e54e0c96e809f1582ebd71f7b12816f53dc4b04668f21034961b2f9 10348 bottle-imp_0.3.tar.xz
+ 935ee3053eafa13633462b4fddd0baec54171657ffd1fd1ef295567650001b74 12320 bottle-imp_0.4.tar.xz
 Files:
- 559e1671add3719e462a0a25ec69fa15 10348 bottle-imp_0.3.tar.xz
+ 948ed161572ef2923f5081c014ee82d6 12320 bottle-imp_0.4.tar.xz
