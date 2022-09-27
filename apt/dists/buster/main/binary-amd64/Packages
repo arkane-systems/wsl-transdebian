@@ -1,18 +1,18 @@
 Package: bottle-imp
-Version: 0.4
+Version: 0.5
 Architecture: amd64
 Maintainer: Alistair Young <avatar@arkane-systems.net>
-Installed-Size: 72
+Installed-Size: 74
 Depends: libc6 (>= 2.34), systemd (>= 232-25), python3 (>= 3.7), python3-pip, python3-psutil, systemd-container (>= 232-25)
 Conflicts: systemd-genie
 Homepage: https://github.com/arkane-systems/bottle-imp
 Priority: optional
 Section: contrib/misc
-Filename: pool/main/b/bottle-imp/bottle-imp_0.4_amd64.deb
-Size: 14556
-SHA256: 0d8ca0ec31a40c1ce4b0ed5c4758d76795ccbc2f81af1fe0cd61e79b0744668b
-SHA1: baafabca58fda162d496c17ffa5671b3658e9965
-MD5sum: b7ef86a00781ba24479b4716e7fe4bea
+Filename: pool/main/b/bottle-imp/bottle-imp_0.5_amd64.deb
+Size: 15154
+SHA256: f86e5108b29576aa490eff84a5713a2dfcdd8ecee56e7081ffc6f8d517f3eb3b
+SHA1: 52c3ce4aa2fdbb70f11d7c48dd6658d98b38b088
+MD5sum: 3af53c24bb7b74aab6aad6afb49fc596
 Description: helper for native systemd support under WSL
  Fixes some secondary facilities and allows easy access to a user session
  when systemd is run under Windows Subsystem for Linux using its native
