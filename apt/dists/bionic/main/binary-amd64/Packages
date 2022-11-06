@@ -1,3 +1,60 @@
+Package: linux-headers-5.15.74.2-20221105-1-microsoft-custom-wsl2+
+Source: linux-upstream
+Version: 5.15.74.2-20221105-1-microsoft-custom-wsl2+-1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 46715
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-headers-5.15.74.2-20221105-1-microsoft-custom-wsl2+_5.15.74.2-20221105-1-microsoft-custom-wsl2+-1_amd64.deb
+Size: 8073988
+SHA256: 16d437d68971f21ccee6f84f32bf10f854c3cd6b6a863bca178436fc7615abf0
+SHA1: 779530d5ecd17b5230480e61df1e2935ba5303e7
+MD5sum: 1e155160b206645eac37af28b2a363cf
+Description: Linux kernel headers for 5.15.74.2-20221105-1-microsoft-custom-wsl2+ on amd64
+ This package provides kernel header files for 5.15.74.2-20221105-1-microsoft-custom-wsl2+ on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-5.15.74.2-20221105-1-microsoft-custom-wsl2+
+Source: linux-upstream
+Version: 5.15.74.2-20221105-1-microsoft-custom-wsl2+-1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 61584
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-image-5.15.74.2-20221105-1-microsoft-custom-wsl2+_5.15.74.2-20221105-1-microsoft-custom-wsl2+-1_amd64.deb
+Size: 56500276
+SHA256: 70737054a6f7cb95b4e17b044108c9c1dc33b3dc797a031d4af6c53e1281340b
+SHA1: dd1d5f5a88dbc058c54ddff0b5439cdfbe1a7f14
+MD5sum: 61b8c8c36dbc983e6a88798364d8ad4b
+Description: Linux kernel, version 5.15.74.2-20221105-1-microsoft-custom-wsl2+
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 5.15.74.2-20221105-1-microsoft-custom-wsl2+.
+
+Package: linux-libc-dev
+Source: linux-upstream
+Version: 5.15.74.2-20221105-1-microsoft-custom-wsl2+-1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 6277
+Provides: linux-kernel-headers
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: devel
+Filename: pool/main/l/linux-upstream/linux-libc-dev_5.15.74.2-20221105-1-microsoft-custom-wsl2+-1_amd64.deb
+Size: 1206752
+SHA256: a1f8c12a9ca93847110551add09146634e31bd23f6434d98612007e0458bcb81
+SHA1: 9ee0239ca9e55d54006123cabeb04fd4de4fe50b
+MD5sum: 4de9c554720f942a506addd69058c5d7
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
 Package: pulseaudio-dummy
 Version: 14.2-2
 Architecture: all
