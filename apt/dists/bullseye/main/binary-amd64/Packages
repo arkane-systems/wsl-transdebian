@@ -56,6 +56,25 @@ Description: Linux kernel headers for 5.15.74.2-20221105-1-microsoft-custom-wsl2
  .
  This is useful for people who need to build external modules
 
+Package: linux-headers-6.1.0-rc6-20221125-1-microsoft-custom-wsl2
+Source: linux-upstream
+Version: 6.1.0-rc6-20221125-1-microsoft-custom-wsl2-1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 49931
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-headers-6.1.0-rc6-20221125-1-microsoft-custom-wsl2_6.1.0-rc6-20221125-1-microsoft-custom-wsl2-1_amd64.deb
+Size: 8577496
+SHA256: 4ce3f6e675fd6b4785645a16b5f915890839ecbc26679cacb70d5ef22deb48ff
+SHA1: cf2ce481e9e3333feb5501c8216e53228fe27acd
+MD5sum: 340a4db646c220b129fcdf0705ef03b2
+Description: Linux kernel headers for 6.1.0-rc6-20221125-1-microsoft-custom-wsl2 on amd64
+ This package provides kernel header files for 6.1.0-rc6-20221125-1-microsoft-custom-wsl2 on amd64
+ .
+ This is useful for people who need to build external modules
+
 Package: linux-image-5.15.68.1-20221005-1-microsoft-custom-wsl2+
 Source: linux-upstream
 Version: 5.15.68.1-20221005-1-microsoft-custom-wsl2+-1
@@ -92,22 +111,40 @@ Description: Linux kernel, version 5.15.74.2-20221105-1-microsoft-custom-wsl2+
  This package contains the Linux kernel, modules and corresponding other
  files, version: 5.15.74.2-20221105-1-microsoft-custom-wsl2+.
 
-Package: linux-libc-dev
+Package: linux-image-6.1.0-rc6-20221125-1-microsoft-custom-wsl2
 Source: linux-upstream
-Version: 5.15.74.2-20221105-1-microsoft-custom-wsl2+-1
+Version: 6.1.0-rc6-20221125-1-microsoft-custom-wsl2-1
 Architecture: amd64
 Maintainer: Alistair Young <avatar@arkane-systems.net>
-Installed-Size: 6277
+Installed-Size: 73199
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-image-6.1.0-rc6-20221125-1-microsoft-custom-wsl2_6.1.0-rc6-20221125-1-microsoft-custom-wsl2-1_amd64.deb
+Size: 69280520
+SHA256: c67930dc918cf6c2f8f962ed766a328971cc9e185dc3f060a8ac2d7490a4c0cc
+SHA1: 6d098414d2350d93f34b591a0bada6a15ecd6f2c
+MD5sum: 230c9c2794711b2b1b274fde379e384d
+Description: Linux kernel, version 6.1.0-rc6-20221125-1-microsoft-custom-wsl2
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 6.1.0-rc6-20221125-1-microsoft-custom-wsl2.
+
+Package: linux-libc-dev
+Source: linux-upstream
+Version: 6.1.0-rc6-20221125-1-microsoft-custom-wsl2-1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 6620
 Provides: linux-kernel-headers
 Multi-Arch: same
 Homepage: https://www.kernel.org/
 Priority: optional
 Section: devel
-Filename: pool/main/l/linux-upstream/linux-libc-dev_5.15.74.2-20221105-1-microsoft-custom-wsl2+-1_amd64.deb
-Size: 1206752
-SHA256: a1f8c12a9ca93847110551add09146634e31bd23f6434d98612007e0458bcb81
-SHA1: 9ee0239ca9e55d54006123cabeb04fd4de4fe50b
-MD5sum: 4de9c554720f942a506addd69058c5d7
+Filename: pool/main/l/linux-upstream/linux-libc-dev_6.1.0-rc6-20221125-1-microsoft-custom-wsl2-1_amd64.deb
+Size: 1273352
+SHA256: fdbe38047bf713d9d1a1e03fbb77fc4f98269846d97a9af31a24a5f0b75efe00
+SHA1: 7190981798320099d8e94e885c1596c48cda137f
+MD5sum: 1247daebe4466ba03b063e4f73683607
 Description: Linux support headers for userspace development
  This package provides userspaces headers from the Linux kernel.  These headers
  are used by the installed headers for GNU glibc and other system libraries.
