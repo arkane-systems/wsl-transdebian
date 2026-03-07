@@ -1,3 +1,42 @@
+Package: bottle-imp
+Version: 1.0
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 59
+Depends: libc6 (>= 2.34), systemd (>= 232-25), python3 (>= 3.7), python3-pip, python3-psutil, systemd-container (>= 232-25)
+Conflicts: systemd-genie
+Homepage: https://github.com/arkane-systems/bottle-imp
+Priority: optional
+Section: contrib/misc
+Filename: pool/main/b/bottle-imp/bottle-imp_1.0_amd64.deb
+Size: 21520
+SHA256: 41d8a14bb5bcd11beca0b06367d327c86b438182b57639110752d48ce665edd1
+SHA1: 66e6e134ae69210cc5e512bff69ff41f85b1bb3f
+MD5sum: 70a866c9fb54336203a9611022ad549c
+Description: helper for native systemd support under WSL
+ Fixes some secondary facilities and allows easy access to a user session
+ when systemd is run under Windows Subsystem for Linux using its native
+ support. A spinoff of system-genie.
+
+Package: linux-headers-5.15.68.1-20221005-1-microsoft-custom-wsl2+
+Source: linux-upstream
+Version: 5.15.68.1-20221005-1-microsoft-custom-wsl2+-1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 46853
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-headers-5.15.68.1-20221005-1-microsoft-custom-wsl2+_5.15.68.1-20221005-1-microsoft-custom-wsl2+-1_amd64.deb
+Size: 8121220
+SHA256: c3ab7763a434059c9102076604868fb19df3efd05e92ffab766331cb82c47f15
+SHA1: 953514f54f6d2862067cacf7123fa8ae25340e2f
+MD5sum: 3e1a147c42f834914efb0e358dc042fe
+Description: Linux kernel headers for 5.15.68.1-20221005-1-microsoft-custom-wsl2+ on amd64
+ This package provides kernel header files for 5.15.68.1-20221005-1-microsoft-custom-wsl2+ on amd64
+ .
+ This is useful for people who need to build external modules
+
 Package: linux-headers-5.15.74.2-20221105-1-microsoft-custom-wsl2+
 Source: linux-upstream
 Version: 5.15.74.2-20221105-1-microsoft-custom-wsl2+-1
@@ -35,6 +74,24 @@ Description: Linux kernel headers for 6.1.0-rc6-20221125-1-microsoft-custom-wsl2
  This package provides kernel header files for 6.1.0-rc6-20221125-1-microsoft-custom-wsl2 on amd64
  .
  This is useful for people who need to build external modules
+
+Package: linux-image-5.15.68.1-20221005-1-microsoft-custom-wsl2+
+Source: linux-upstream
+Version: 5.15.68.1-20221005-1-microsoft-custom-wsl2+-1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 57480
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-image-5.15.68.1-20221005-1-microsoft-custom-wsl2+_5.15.68.1-20221005-1-microsoft-custom-wsl2+-1_amd64.deb
+Size: 52324068
+SHA256: be9b470a016e75a60c85a5860f88d126477ba163931fa7e80677fceb166db8e3
+SHA1: 3a5076cc28d09d564a72440f78c0875855f12055
+MD5sum: b53dec743eb565e0d3f68404a482798a
+Description: Linux kernel, version 5.15.68.1-20221005-1-microsoft-custom-wsl2+
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 5.15.68.1-20221005-1-microsoft-custom-wsl2+.
 
 Package: linux-image-5.15.74.2-20221105-1-microsoft-custom-wsl2+
 Source: linux-upstream

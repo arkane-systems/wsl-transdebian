@@ -1,0 +1,76 @@
+Package: bottle-imp
+Version: 1.0
+Architecture: arm64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 50
+Depends: libc6 (>= 2.28), systemd (>= 232-25), python3 (>= 3.7), python3-pip, python3-psutil, systemd-container (>= 232-25)
+Conflicts: systemd-genie
+Homepage: https://github.com/arkane-systems/bottle-imp
+Priority: optional
+Section: contrib/misc
+Filename: pool/main/b/bottle-imp/bottle-imp_1.0_arm64.deb
+Size: 21404
+SHA256: b0feb8665712335ab7b19a717b2d1671325df9cf2c85ce5d0502101ee6100729
+SHA1: 66eb8dc2bc478bb470b7dcb3333d7bb6d87f07fd
+MD5sum: dd7c9ddf1cc89581654e444deaa4239f
+Description: helper for native systemd support under WSL
+ Fixes some secondary facilities and allows easy access to a user session
+ when systemd is run under Windows Subsystem for Linux using its native
+ support. A spinoff of system-genie.
+
+Package: pulseaudio-dummy
+Version: 14.2-2
+Architecture: all
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 9
+Provides: pulseaudio
+Multi-Arch: foreign
+Homepage: https//github.com/cerebrate/fake-packages
+Priority: optional
+Section: sound
+Filename: pool/main/p/pulseaudio-dummy/pulseaudio-dummy_14.2-2_all.deb
+Size: 2236
+SHA256: fd10f28bd1a44d92212b5d1f3f02a8ced091783fd7c0309dc8d153526e7f8b58
+SHA1: 021a5a81104fdecb8eb67632ea50ec28adfc386b
+MD5sum: 2e718230c7091bfb8634b3730edfe7f4
+Description: Dummy pulseaudio package.
+ Hacks dependencies to allow non-install under WSLg
+
+Package: systemd-genie
+Version: 2.5
+Architecture: arm64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 92
+Depends: dbus, policykit-1, daemonize, systemd (>= 232-25), python3 (>= 3.7), python3-pip, python3-psutil, systemd-container (>= 232-25), gawk
+Conflicts: bottle-imp
+Homepage: https://github.com/arkane-systems/genie
+Priority: optional
+Section: contrib/misc
+Filename: pool/main/s/systemd-genie/systemd-genie_2.5_arm64.deb
+Size: 53944
+SHA256: 8658033e825f4ee75b0031e73859da19f16e4cbe5e1f5d8d687db8db59452397
+SHA1: 6dbb9c292161bc1d3058865d2af5f03ce3ad4dd4
+MD5sum: 14332db55e7dad3d14fa1357bb58a7f6
+Description: quick way into a systemd "bottle" under Windows Subsystem for Linux
+ Automates the process of starting up, entering into, and shutting down
+ a container within which systemd is pid 1, effectively enabling the use
+ of systemd within a WSL distro.
+
+Package: xwayland-dummy
+Version: 2:1.20.11-1
+Architecture: all
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 9
+Provides: xwayland
+Multi-Arch: foreign
+Homepage: https://github.com/cerebrate/fake-packages
+Priority: optional
+Section: x11
+Filename: pool/main/x/xwayland-dummy/xwayland-dummy_1.20.11-1_all.deb
+Size: 2228
+SHA256: d7159571f22f3ba4f349903a4a4a896ae2ae0e65557d7d2ccb6159291d202612
+SHA1: d77d4826e3818bbaa42d9632062419f74f57c716
+MD5sum: 62ec5370f60fe04aa188b437bab65c7c
+Description: Dummy xwayland package.
+ Hacks dependencies to allow non-install under WSLg.
+

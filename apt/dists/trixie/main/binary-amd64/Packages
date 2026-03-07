@@ -1,0 +1,244 @@
+Package: bottle-imp
+Version: 1.0
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 59
+Depends: libc6 (>= 2.34), systemd (>= 232-25), python3 (>= 3.7), python3-pip, python3-psutil, systemd-container (>= 232-25)
+Conflicts: systemd-genie
+Homepage: https://github.com/arkane-systems/bottle-imp
+Priority: optional
+Section: contrib/misc
+Filename: pool/main/b/bottle-imp/bottle-imp_1.0_amd64.deb
+Size: 21520
+SHA256: 41d8a14bb5bcd11beca0b06367d327c86b438182b57639110752d48ce665edd1
+SHA1: 66e6e134ae69210cc5e512bff69ff41f85b1bb3f
+MD5sum: 70a866c9fb54336203a9611022ad549c
+Description: helper for native systemd support under WSL
+ Fixes some secondary facilities and allows easy access to a user session
+ when systemd is run under Windows Subsystem for Linux using its native
+ support. A spinoff of system-genie.
+
+Package: linux-headers-5.15.68.1-20221005-1-microsoft-custom-wsl2+
+Source: linux-upstream
+Version: 5.15.68.1-20221005-1-microsoft-custom-wsl2+-1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 46853
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-headers-5.15.68.1-20221005-1-microsoft-custom-wsl2+_5.15.68.1-20221005-1-microsoft-custom-wsl2+-1_amd64.deb
+Size: 8121220
+SHA256: c3ab7763a434059c9102076604868fb19df3efd05e92ffab766331cb82c47f15
+SHA1: 953514f54f6d2862067cacf7123fa8ae25340e2f
+MD5sum: 3e1a147c42f834914efb0e358dc042fe
+Description: Linux kernel headers for 5.15.68.1-20221005-1-microsoft-custom-wsl2+ on amd64
+ This package provides kernel header files for 5.15.68.1-20221005-1-microsoft-custom-wsl2+ on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-headers-5.15.74.2-20221105-1-microsoft-custom-wsl2+
+Source: linux-upstream
+Version: 5.15.74.2-20221105-1-microsoft-custom-wsl2+-1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 46715
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-headers-5.15.74.2-20221105-1-microsoft-custom-wsl2+_5.15.74.2-20221105-1-microsoft-custom-wsl2+-1_amd64.deb
+Size: 8073988
+SHA256: 16d437d68971f21ccee6f84f32bf10f854c3cd6b6a863bca178436fc7615abf0
+SHA1: 779530d5ecd17b5230480e61df1e2935ba5303e7
+MD5sum: 1e155160b206645eac37af28b2a363cf
+Description: Linux kernel headers for 5.15.74.2-20221105-1-microsoft-custom-wsl2+ on amd64
+ This package provides kernel header files for 5.15.74.2-20221105-1-microsoft-custom-wsl2+ on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-headers-6.1.0-rc6-20221125-1-microsoft-custom-wsl2
+Source: linux-upstream
+Version: 6.1.0-rc6-20221125-1-microsoft-custom-wsl2-1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 49931
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-headers-6.1.0-rc6-20221125-1-microsoft-custom-wsl2_6.1.0-rc6-20221125-1-microsoft-custom-wsl2-1_amd64.deb
+Size: 8577496
+SHA256: 4ce3f6e675fd6b4785645a16b5f915890839ecbc26679cacb70d5ef22deb48ff
+SHA1: cf2ce481e9e3333feb5501c8216e53228fe27acd
+MD5sum: 340a4db646c220b129fcdf0705ef03b2
+Description: Linux kernel headers for 6.1.0-rc6-20221125-1-microsoft-custom-wsl2 on amd64
+ This package provides kernel header files for 6.1.0-rc6-20221125-1-microsoft-custom-wsl2 on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-5.15.68.1-20221005-1-microsoft-custom-wsl2+
+Source: linux-upstream
+Version: 5.15.68.1-20221005-1-microsoft-custom-wsl2+-1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 57480
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-image-5.15.68.1-20221005-1-microsoft-custom-wsl2+_5.15.68.1-20221005-1-microsoft-custom-wsl2+-1_amd64.deb
+Size: 52324068
+SHA256: be9b470a016e75a60c85a5860f88d126477ba163931fa7e80677fceb166db8e3
+SHA1: 3a5076cc28d09d564a72440f78c0875855f12055
+MD5sum: b53dec743eb565e0d3f68404a482798a
+Description: Linux kernel, version 5.15.68.1-20221005-1-microsoft-custom-wsl2+
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 5.15.68.1-20221005-1-microsoft-custom-wsl2+.
+
+Package: linux-image-5.15.74.2-20221105-1-microsoft-custom-wsl2+
+Source: linux-upstream
+Version: 5.15.74.2-20221105-1-microsoft-custom-wsl2+-1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 61584
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-image-5.15.74.2-20221105-1-microsoft-custom-wsl2+_5.15.74.2-20221105-1-microsoft-custom-wsl2+-1_amd64.deb
+Size: 56500276
+SHA256: 70737054a6f7cb95b4e17b044108c9c1dc33b3dc797a031d4af6c53e1281340b
+SHA1: dd1d5f5a88dbc058c54ddff0b5439cdfbe1a7f14
+MD5sum: 61b8c8c36dbc983e6a88798364d8ad4b
+Description: Linux kernel, version 5.15.74.2-20221105-1-microsoft-custom-wsl2+
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 5.15.74.2-20221105-1-microsoft-custom-wsl2+.
+
+Package: linux-image-6.1.0-rc6-20221125-1-microsoft-custom-wsl2
+Source: linux-upstream
+Version: 6.1.0-rc6-20221125-1-microsoft-custom-wsl2-1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 73199
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-image-6.1.0-rc6-20221125-1-microsoft-custom-wsl2_6.1.0-rc6-20221125-1-microsoft-custom-wsl2-1_amd64.deb
+Size: 69280520
+SHA256: c67930dc918cf6c2f8f962ed766a328971cc9e185dc3f060a8ac2d7490a4c0cc
+SHA1: 6d098414d2350d93f34b591a0bada6a15ecd6f2c
+MD5sum: 230c9c2794711b2b1b274fde379e384d
+Description: Linux kernel, version 6.1.0-rc6-20221125-1-microsoft-custom-wsl2
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 6.1.0-rc6-20221125-1-microsoft-custom-wsl2.
+
+Package: linux-libc-dev
+Source: linux-upstream
+Version: 6.1.0-rc6-20221125-1-microsoft-custom-wsl2-1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 6620
+Provides: linux-kernel-headers
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: devel
+Filename: pool/main/l/linux-upstream/linux-libc-dev_6.1.0-rc6-20221125-1-microsoft-custom-wsl2-1_amd64.deb
+Size: 1273352
+SHA256: fdbe38047bf713d9d1a1e03fbb77fc4f98269846d97a9af31a24a5f0b75efe00
+SHA1: 7190981798320099d8e94e885c1596c48cda137f
+MD5sum: 1247daebe4466ba03b063e4f73683607
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: pulseaudio-dummy
+Version: 14.2-2
+Architecture: all
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 9
+Provides: pulseaudio
+Multi-Arch: foreign
+Homepage: https//github.com/cerebrate/fake-packages
+Priority: optional
+Section: sound
+Filename: pool/main/p/pulseaudio-dummy/pulseaudio-dummy_14.2-2_all.deb
+Size: 2236
+SHA256: fd10f28bd1a44d92212b5d1f3f02a8ced091783fd7c0309dc8d153526e7f8b58
+SHA1: 021a5a81104fdecb8eb67632ea50ec28adfc386b
+MD5sum: 2e718230c7091bfb8634b3730edfe7f4
+Description: Dummy pulseaudio package.
+ Hacks dependencies to allow non-install under WSLg
+
+Package: systemd-genie
+Version: 2.5
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 101
+Depends: libc6 (>= 2.2.5), dbus, policykit-1, daemonize, systemd (>= 232-25), python3 (>= 3.7), python3-pip, python3-psutil, systemd-container (>= 232-25), gawk
+Conflicts: bottle-imp
+Homepage: https://github.com/arkane-systems/genie
+Priority: optional
+Section: contrib/misc
+Filename: pool/main/s/systemd-genie/systemd-genie_2.5_amd64.deb
+Size: 54128
+SHA256: 946b4dc5dc47bd3d7696b2e376684cf4f0bc31364545cce048cb9eee8b20f851
+SHA1: 5777bf241e7a59b0ecbdb24b8ed38d98bf3adefe
+MD5sum: 93bac15751b180cf14e0a39439fdc1b5
+Description: quick way into a systemd "bottle" under Windows Subsystem for Linux
+ Automates the process of starting up, entering into, and shutting down
+ a container within which systemd is pid 1, effectively enabling the use
+ of systemd within a WSL distro.
+
+Package: wsl-drop-caches
+Version: 0.5
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 24
+Depends: systemd, python3, python3-psutil
+Homepage: https://github.com/arkane-systems/wsl-drop-cache
+Priority: optional
+Section: contrib/misc
+Filename: pool/main/w/wsl-drop-caches/wsl-drop-caches_0.5_amd64.deb
+Size: 3884
+SHA256: 000d7609c28ba26bdd1d0b2428315e6b692b66da7f390c2562551a9f3b393570
+SHA1: 018256310104c893b4dd02908c14f60a1fbad622
+MD5sum: b5beed62ad48c5efd332ef16a2400aab
+Description: periodically drops the caches, saving memory under Windows Subsystem for Linux
+ A python script which periodically drops the caches, which saves memory under
+ Windows Subsystem for Linux, which would otherwise expand to use all WSL
+ available memory.
+
+Package: wsl-share-fs
+Version: 0.1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 21
+Depends: systemd
+Homepage: https://github.com/arkane-systems/wsl-share-fs
+Priority: optional
+Section: contrib/misc
+Filename: pool/main/w/wsl-share-fs/wsl-share-fs_0.1_amd64.deb
+Size: 2612
+SHA256: 68b5f4d3d5b2a721cf44069bd85365d74e3fb79c890316fb2005f9905e500d60
+SHA1: b87e1dc85f59c02a639a6cb82c476b8ecfb6b745
+MD5sum: 5c7c4253e57af53cbf7076a4e65f2b4c
+Description: automatically mounts the root filesystem for cross-distro sharing
+ A systemd service and script which mounts the distro filesystem under /mnt/wsl,
+ enabling cross-distro sharing of it under Windows Subsystem for Linux.
+
+Package: xwayland-dummy
+Version: 2:1.20.11-1
+Architecture: all
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 9
+Provides: xwayland
+Multi-Arch: foreign
+Homepage: https://github.com/cerebrate/fake-packages
+Priority: optional
+Section: x11
+Filename: pool/main/x/xwayland-dummy/xwayland-dummy_1.20.11-1_all.deb
+Size: 2228
+SHA256: d7159571f22f3ba4f349903a4a4a896ae2ae0e65557d7d2ccb6159291d202612
+SHA1: d77d4826e3818bbaa42d9632062419f74f57c716
+MD5sum: 62ec5370f60fe04aa188b437bab65c7c
+Description: Dummy xwayland package.
+ Hacks dependencies to allow non-install under WSLg.
+

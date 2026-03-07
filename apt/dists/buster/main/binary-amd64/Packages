@@ -18,6 +18,25 @@ Description: helper for native systemd support under WSL
  when systemd is run under Windows Subsystem for Linux using its native
  support. A spinoff of system-genie.
 
+Package: linux-headers-5.15.68.1-20221005-1-microsoft-custom-wsl2+
+Source: linux-upstream
+Version: 5.15.68.1-20221005-1-microsoft-custom-wsl2+-1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 46853
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-headers-5.15.68.1-20221005-1-microsoft-custom-wsl2+_5.15.68.1-20221005-1-microsoft-custom-wsl2+-1_amd64.deb
+Size: 8121220
+SHA256: c3ab7763a434059c9102076604868fb19df3efd05e92ffab766331cb82c47f15
+SHA1: 953514f54f6d2862067cacf7123fa8ae25340e2f
+MD5sum: 3e1a147c42f834914efb0e358dc042fe
+Description: Linux kernel headers for 5.15.68.1-20221005-1-microsoft-custom-wsl2+ on amd64
+ This package provides kernel header files for 5.15.68.1-20221005-1-microsoft-custom-wsl2+ on amd64
+ .
+ This is useful for people who need to build external modules
+
 Package: linux-headers-5.15.74.2-20221105-1-microsoft-custom-wsl2+
 Source: linux-upstream
 Version: 5.15.74.2-20221105-1-microsoft-custom-wsl2+-1
@@ -55,6 +74,24 @@ Description: Linux kernel headers for 6.1.0-rc6-20221125-1-microsoft-custom-wsl2
  This package provides kernel header files for 6.1.0-rc6-20221125-1-microsoft-custom-wsl2 on amd64
  .
  This is useful for people who need to build external modules
+
+Package: linux-image-5.15.68.1-20221005-1-microsoft-custom-wsl2+
+Source: linux-upstream
+Version: 5.15.68.1-20221005-1-microsoft-custom-wsl2+-1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 57480
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-image-5.15.68.1-20221005-1-microsoft-custom-wsl2+_5.15.68.1-20221005-1-microsoft-custom-wsl2+-1_amd64.deb
+Size: 52324068
+SHA256: be9b470a016e75a60c85a5860f88d126477ba163931fa7e80677fceb166db8e3
+SHA1: 3a5076cc28d09d564a72440f78c0875855f12055
+MD5sum: b53dec743eb565e0d3f68404a482798a
+Description: Linux kernel, version 5.15.68.1-20221005-1-microsoft-custom-wsl2+
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 5.15.68.1-20221005-1-microsoft-custom-wsl2+.
 
 Package: linux-image-5.15.74.2-20221105-1-microsoft-custom-wsl2+
 Source: linux-upstream
