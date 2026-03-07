@@ -1,38 +1,61 @@
 name: Publish new packages.
 
-# Controls when the action will run. 
 on:
-  # Triggers the workflow on push events but only for the master branch
   push:
     branches: [ master ]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   publish:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Runs a single command using the runners shell
-      - uses: arkane-systems/apt-repo-update@v1.1
+      - uses: actions/checkout@v4
         with:
-          debug: false
-          github_token: ${{ secrets.PAT }}
-          repo_supported_arch: |
-            amd64
-          repo_supported_distro: |
-            focal
-            bionic
-            buster
-            bullseye
-            bookworm
-            sid
-            trixie
-          private_key: ${{ secrets.TRANSDEBIAN_REPO_SIGNING_KEY }}
-          key_passphrase: ${{ secrets.TRANSDEBIAN_REPO_PASSPHRASE }} 
- 
+          token: ${{ secrets.PAT }}
+
+      - name: Install reprepro
+        run: sudo apt-get install -y --no-install-recommends reprepro
+
+      - name: Import signing key and cache passphrase
+        env:
+          SIGNING_KEY: ${{ secrets.TRANSDEBIAN_REPO_SIGNING_KEY }}
+          PASSPHRASE: ${{ secrets.TRANSDEBIAN_REPO_PASSPHRASE }}
+        run: |
+          echo "$SIGNING_KEY" | gpg --batch --import
+          mkdir -p ~/.gnupg && chmod 700 ~/.gnupg
+          printf '%s\n' 'allow-loopback-pinentry' 'default-cache-ttl 7200' \
+            >> ~/.gnupg/gpg-agent.conf
+          gpgconf --kill gpg-agent
+          # Cache the passphrase in the agent via a dummy sign operation
+          printf '%s' "$PASSPHRASE" | gpg --batch --pinentry-mode loopback \
+            --passphrase-fd 0 -u 428AD1A0BA078ABB \
+            --output /dev/null --sign /dev/null
+
+      - name: Add packages to repository
+        run: |
+          shopt -s nullglob
+          debs=(updates/*.deb)
+          if [ "${#debs[@]}" -eq 0 ]; then
+            echo "No packages to process."
+            exit 0
+          fi
+          for distro in bionic focal jammy buster bullseye bookworm sid trixie; do
+            for deb in "${debs[@]}"; do
+              reprepro --ignore=wrongdistribution -b apt includedeb "$distro" "$deb" || true
+            done
+          done
+
+      - name: Commit and push changes
+        run: |
+          find updates -name "*.deb" -delete
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add apt/ updates/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update apt repository"
+            git push
+          fi
+

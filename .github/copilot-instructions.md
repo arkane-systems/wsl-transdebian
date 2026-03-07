@@ -19,7 +19,7 @@ There is no application code, build system, or test suite. All publishing is ful
 ## Publishing workflow
 
 1. A contributor forks the repo, places `.deb` (and optionally `.dsc` + `.tar.xz`) in `updates/`, and opens a PR.
-2. On merge to `master`, the `arkane-systems/apt-repo-update@v1.1` action runs, ingesting packages from `updates/` into `apt/` using reprepro, then commits and pushes the updated `apt/` tree.
+2. On merge to `master`, the publish workflow runs: it installs `reprepro` on the Ubuntu runner, imports the signing key, runs `reprepro includedeb` for each package in `updates/` across all supported distros, commits and pushes the updated `apt/` tree, and clears `updates/`.
 3. GitHub Pages serves the updated `apt/` directory immediately.
 
 Required repository secrets: `PAT` (GitHub personal access token), `TRANSDEBIAN_REPO_SIGNING_KEY`, `TRANSDEBIAN_REPO_PASSPHRASE`.
