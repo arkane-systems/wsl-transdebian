@@ -6,6 +6,7 @@ This includes packages for multiple distributions which use apt packages, not me
  * Debian 10 _buster_
  * Debian 11 _bullseye_
  * Debian 12 _bookworm_
+ * Debian 13 _trixie_
  * Debian (testing) _sid_
  * Ubuntu 18.04 LTS _bionic_
  * Ubuntu 20.04 LTS _focal_
