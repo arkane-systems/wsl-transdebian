@@ -32,6 +32,7 @@ Required repository secrets: `PAT` (GitHub personal access token), `TRANSDEBIAN_
 | `bullseye` | Debian 11            | Supported   |
 | `bookworm` | Debian 12            | Supported   |
 | `sid`      | Debian (testing)     | Supported   |
+| `trixie`   | Debian 13            | Supported   |
 | `bionic`   | Ubuntu 18.04 LTS     | Supported   |
 | `focal`    | Ubuntu 20.04 LTS     | Supported   |
 | `jammy`    | Ubuntu 22.04 LTS     | Supported   |
