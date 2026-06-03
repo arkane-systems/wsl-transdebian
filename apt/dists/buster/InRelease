@@ -4,13 +4,13 @@ Hash: SHA512
 Origin: ArkaneSystems
 Label: WSL Transdebian
 Codename: buster
-Date: Sat, 07 Mar 2026 22:04:08 UTC
+Date: Wed, 03 Jun 2026 03:19:08 UTC
 Architectures: amd64 arm64
 Components: main
 Description: WSL-specific packages hosted on the Arkane Systems github repository
 MD5Sum:
- f3a0dc7059752cd62acb274b7413fc76 10455 main/binary-amd64/Packages
- 0b8fab07c50aeeae0427b80b6d95d098 2894 main/binary-amd64/Packages.gz
+ 43ef699e1be5751a351ab0d36a112c4c 12007 main/binary-amd64/Packages
+ 0679a12d3daedfa73da8530e406cb95d 3169 main/binary-amd64/Packages.gz
  a2f3caedb64cd6fb7d0cb5f6bed4df32 163 main/binary-amd64/Release
  80911b83b630168a62fcee28b45104d9 2915 main/binary-arm64/Packages
  21310b003cdfca7147e1fed4f9267b22 1229 main/binary-arm64/Packages.gz
@@ -19,8 +19,8 @@ MD5Sum:
  c2fa33a03c34dcf83bf946f7dd346def 1327 main/source/Sources.gz
  d98f5a9c7aeb10035a4016358d9e9454 164 main/source/Release
 SHA1:
- ff281e572fcd572e82a3ce0935163085a0c29853 10455 main/binary-amd64/Packages
- 7fe7175b0c271ee483adc11613431373f53a0e55 2894 main/binary-amd64/Packages.gz
+ c4ba23fa382553d6a473ff480d19e6cb9e4f36f5 12007 main/binary-amd64/Packages
+ 243d6584423923ce7fc1b7e1a7ab6ee71b045dec 3169 main/binary-amd64/Packages.gz
  d03000dff4b7f7a13deb756cbaa63dcc6f4c9536 163 main/binary-amd64/Release
  280ce14e00603422b11fe1036bc15882cdbfe0fc 2915 main/binary-arm64/Packages
  b682877c7083d600d958de299090aa2812dacf1c 1229 main/binary-arm64/Packages.gz
@@ -29,8 +29,8 @@ SHA1:
  ede1b3d1f46dbc5e69c4282ca8631ebfd5ea405b 1327 main/source/Sources.gz
  48f62b752773af3825c9beeb2c53b2b6987c998b 164 main/source/Release
 SHA256:
- 29a332e3299b515ea14ce79abe48db511e5ea16689545c8cc763925fa694ef8e 10455 main/binary-amd64/Packages
- baafc8b08e492dfd6fc5d5f73f8e7e36e78a6fe3a38704b4a13f91dccd0f98f9 2894 main/binary-amd64/Packages.gz
+ db14f94cfad10abbbe1981928066bb5077fd6a53e970d06a49048e48bf4d9828 12007 main/binary-amd64/Packages
+ 8b943ba79ed701a33dd0ba3f3774882f977cb8d0b44f7e2efe03177c7fa7715f 3169 main/binary-amd64/Packages.gz
  c562e878dcc6b169a20988934960aedd1dc7602263b1eb0a06f6d0529afc93c4 163 main/binary-amd64/Release
  0131dc43284a803b77fdc28e60f857ff3cc463bb8423529c14c6ccb6403410d0 2915 main/binary-arm64/Packages
  0cc492f3aa497e1482b70ba97bc05186bc2ae14c77222e57d48b916523515a57 1229 main/binary-arm64/Packages.gz
@@ -40,17 +40,17 @@ SHA256:
  7deaf2f6137cfa9222bcd65d367d7128929a724eb7fb2e1204725eebc41a6171 164 main/source/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEQ74zMj7dcSYDvubAQorRoLoHirsFAmmsoNkACgkQQorRoLoH
-irsX2Q/+PcLUXi48UALxioQ+wDCcEzz2FtCX1WlBCmvXx/Gj62Bo5rOCmkqN68PZ
-z15tpuzCiefBIiE8mmGT0FWj0gtJPASLgOiYYvtLqQ60Qpz8ZslTD64ZcQN9pzeC
-Uije8+blsDP7CEc2DTCboYsUV4Xx1OpquWzZuVvMg5bJsPq92dnUUPoYIWTlYcVr
-q1Ez5fI8os5RLYrRtyBVj1/WIth2ksB551k0bGWJsNxh7SsxmCaEC9wjtJUMmXAV
-WAQJMDP8fR9sVXhpVCkSLPRm7V/KZVp+l0HhRiMufntk6imbcY+Jm3C6loXQ1gB4
-RIIS75kb31OeoOEFCp6r+902y4edsLFel4glD+Vth9RveDpUC7jM7CTVseyaQMej
-gBe3PVZn6A88nmvTmns2AAxfHb0/TIjv7G2l0MFit0opwNbopQW1GZ+JsOVw53W6
-VlKwCS8TXtOXQn7JHC7oxKGI+nQehR0/exxUNjmYUMdyI3oGVew3LOA8Y8SCDQYH
-5e0YEQf/DsndGV1p7K5CEFnc0FqEncjxkfYd6Ia26ZYlQ69DUBmxB/2ypHUVCcCp
-DI71qrg3l2kVDgnQwA6FlfVeYF0G8AMOhU73HotqyJH2z+tyjvSsMZfRvYq5aP3X
-TVM2Y4bd877coIwRUs4RsQeUgXYHqE9H7atUCqYrqhQ4RqukiKU=
-=n1ti
+iQIzBAEBCgAdFiEEQ74zMj7dcSYDvubAQorRoLoHirsFAmofnSwACgkQQorRoLoH
+irs6Lg/9GtoNUDqH3D/KGeqh0BMvBalCLlzk3lWoraHMAYq+Dw/KtndDmhaGtUxv
+efen7bFWpZnMy6YiLhDu3wvLDihN3IjpYmvLhc20l83IAzyp5xacu07MOPQNnGpY
+Fmg6ecs0gfG1uRpfqjw/GxIadZEgha2LB3nEA29/B97p07kFWPu+irSaoBT4qVq1
+KnjE3T7aaa/x6X9IwFblxi57V1ZY+65JzDZcdOZQMO3qhcFuimtstVDm9FCKk8fO
+xwcZfqJ3OvQBbb3say1rhXBcdN6F12y4xaLicQ6BY8H/ncVfk+d+Xcz/qU4rDIj8
+gHplovWS4n9M3kbIEukYKfBTy1qVzRq4WoRIMzcdBd7gl8ihQlP4UhulP/K1Wc7J
+/p/YKWRFGA6A3wwE3L8pxEPDsMtT/oIDXmv6VLm6Mu9cIzbO/wlyCJw5FNQsaEZE
+cgWR8Cx96ACc8JEp46MWcbCM6WenMc6Ud1goXoU8l1unzng0WTVdmNr8x+Jauvxs
+5KPo3oXjwmCE3x6Lg/8QaOVHvTtFmigiImY69OYrioDTQVeXDI1qbmXCu5xPFm74
+UADcqpFLbHT7bU852vPx1u1cpEwAcJgPwTke4gvRNUKS5YllPSyhatoE0TzRnFHx
+c1gxU/MOOsFWLIzvuB+FvZgRKXczTDIom72Cv6BpxBfNqfESbns=
+=Ivb9
 -----END PGP SIGNATURE-----

@@ -1,16 +1,16 @@
 -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
+Hash: SHA512
 
 Origin: ArkaneSystems
 Label: WSL Transdebian
 Codename: bullseye
-Date: Sat, 26 Nov 2022 02:37:04 UTC
+Date: Wed, 03 Jun 2026 03:19:10 UTC
 Architectures: amd64 arm64
 Components: main
 Description: WSL-specific packages hosted on the Arkane Systems github repository
 MD5Sum:
- f3a0dc7059752cd62acb274b7413fc76 10455 main/binary-amd64/Packages
- 0b8fab07c50aeeae0427b80b6d95d098 2894 main/binary-amd64/Packages.gz
+ 43ef699e1be5751a351ab0d36a112c4c 12007 main/binary-amd64/Packages
+ 0679a12d3daedfa73da8530e406cb95d 3169 main/binary-amd64/Packages.gz
  a2f3caedb64cd6fb7d0cb5f6bed4df32 163 main/binary-amd64/Release
  80911b83b630168a62fcee28b45104d9 2915 main/binary-arm64/Packages
  21310b003cdfca7147e1fed4f9267b22 1229 main/binary-arm64/Packages.gz
@@ -19,8 +19,8 @@ MD5Sum:
  c2fa33a03c34dcf83bf946f7dd346def 1327 main/source/Sources.gz
  d98f5a9c7aeb10035a4016358d9e9454 164 main/source/Release
 SHA1:
- ff281e572fcd572e82a3ce0935163085a0c29853 10455 main/binary-amd64/Packages
- 7fe7175b0c271ee483adc11613431373f53a0e55 2894 main/binary-amd64/Packages.gz
+ c4ba23fa382553d6a473ff480d19e6cb9e4f36f5 12007 main/binary-amd64/Packages
+ 243d6584423923ce7fc1b7e1a7ab6ee71b045dec 3169 main/binary-amd64/Packages.gz
  d03000dff4b7f7a13deb756cbaa63dcc6f4c9536 163 main/binary-amd64/Release
  280ce14e00603422b11fe1036bc15882cdbfe0fc 2915 main/binary-arm64/Packages
  b682877c7083d600d958de299090aa2812dacf1c 1229 main/binary-arm64/Packages.gz
@@ -29,8 +29,8 @@ SHA1:
  ede1b3d1f46dbc5e69c4282ca8631ebfd5ea405b 1327 main/source/Sources.gz
  48f62b752773af3825c9beeb2c53b2b6987c998b 164 main/source/Release
 SHA256:
- 29a332e3299b515ea14ce79abe48db511e5ea16689545c8cc763925fa694ef8e 10455 main/binary-amd64/Packages
- baafc8b08e492dfd6fc5d5f73f8e7e36e78a6fe3a38704b4a13f91dccd0f98f9 2894 main/binary-amd64/Packages.gz
+ db14f94cfad10abbbe1981928066bb5077fd6a53e970d06a49048e48bf4d9828 12007 main/binary-amd64/Packages
+ 8b943ba79ed701a33dd0ba3f3774882f977cb8d0b44f7e2efe03177c7fa7715f 3169 main/binary-amd64/Packages.gz
  c562e878dcc6b169a20988934960aedd1dc7602263b1eb0a06f6d0529afc93c4 163 main/binary-amd64/Release
  0131dc43284a803b77fdc28e60f857ff3cc463bb8423529c14c6ccb6403410d0 2915 main/binary-arm64/Packages
  0cc492f3aa497e1482b70ba97bc05186bc2ae14c77222e57d48b916523515a57 1229 main/binary-arm64/Packages.gz
@@ -40,17 +40,17 @@ SHA256:
  7deaf2f6137cfa9222bcd65d367d7128929a724eb7fb2e1204725eebc41a6171 164 main/source/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEQ74zMj7dcSYDvubAQorRoLoHirsFAmOBe9AACgkQQorRoLoH
-irt4lA//Y96cd0TpoMQQLsMG57VHiJ7Pukg/2D3RPbnED+0MUIggdRRtFJ5DIIxB
-Rrz+ujbvpgRsz7TyPuXGxthAXF9ciejMFKmLNmD8S+d+UvhY71ANZi2/1JnoV8eB
-diSA2pbZ4U0e/EOtMVIwGt6LZZ8LnevkaAQokqNmw+qv40x7ziqhuUUdZJe97x9k
-L7FIUSCgZJaKKwGD39vyhqjg3LuB2c3lAiCzTrGEHuaHzzxlOqiFIKzdNk6pxne1
-59bBcXMJZoRnLkD8gkOV45mU9ODrsXIY57yCAR7ndGQRzZndLaJLn2rtToTf7FY8
-+3sFb+ZgNGD9O4kX2hABlPiyON1grRbcpTWWQmcOgkiORJ4I2g0sBkOVMEe5VP8H
-6D3pgibLMEe3l1tzuqPMvh9hUXoWzk3mrGDASUC+Y4w+ehnXKgmCSSmD6IqbN+y/
-c2SNJeHM2yiR8/vDT6tCBj8uiuOKXQqYa0mv0IGKdNHgU9C8yjMtCEL4JEjl5TKP
-n1uo1ec4DilDjZI5dG+K63v+tq6fwGpxbK49d4H4Ksg60Ln1jP5skdVzAohezsL0
-3F7aNQG9Hg6IWO0EqL8aSXX7MUYtAPYbfBWHmmytX6XB101VTvjw0fG5BpLIqUih
-avNkWlD28zf5jztc/on0SZEI5zdIYSco4GPC/MRpQImhM+KNL5o=
-=XOeG
+iQIzBAEBCgAdFiEEQ74zMj7dcSYDvubAQorRoLoHirsFAmofnS4ACgkQQorRoLoH
+irsRpg/+K8gD6hDp2DdKEeI0MBqBytB9zi+viZ6km/moubhXfWhz7Wvp0y9LMDkn
+XU1/fuWuqH3/Yla/aDEB4ABDIHYkSr/W6D6QkoW/e8cueXxTev/OAr7ecHKQRN5d
+EG5B5nbvNUsYkqV2H0EW+CmQvI0VEFR38QN2lhYkcrl0PfRXF/j8USMPFlrg5lYZ
+KbWjC1CYUWDM9QzgTvMS+QrCwfCO+HTRfvE5r8I0d1UF+S6lYliv2jZPoXCDoOuV
+FftwIAMJVBA9X2G4VmP7iD/G+9hfdv19k+/fGMry1g0WNiMupqjuPvSFWgvfktV5
+ySDozHb4pqtDpQ3kDlZoOYR5GZT63kLJCZhsuTyOzoZztjLZFC0cCuvM0N33nVFb
+LXtKieAE0mtVdQm8DjFTOry2LspA3ht6RNMwFqq7+5CQATAeHviR/x8EotzipnEi
+tuA+9RzKvSeUC6Y8vokaGP5ixQztI15aWokpD4CHsoGLwK2lsLOU5X7cGZJytkrm
+BA+NpmV5gY9kGZMKzrHidd9NG96inPkrZVeH96F0lPZqpddj7IO1WAHVw1U+FS+g
+acSHImIAvlz+gNh4Mgp0dABDyE7dmveFx12grWuoaLIqpaO429zvqAofE8n/iIKi
+j+LYgBnemTNad0k54Wm5R/YbihEPAV8JUqaLXgpaTIM25jWao4o=
+=FXpn
 -----END PGP SIGNATURE-----

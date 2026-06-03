@@ -75,6 +75,25 @@ Description: Linux kernel headers for 6.1.0-rc6-20221125-1-microsoft-custom-wsl2
  .
  This is useful for people who need to build external modules
 
+Package: linux-headers-7.0.0-2026060201-microsoft-custom-wsl2
+Source: linux-upstream
+Version: 7.0.0-1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 58266
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-headers-7.0.0-2026060201-microsoft-custom-wsl2_7.0.0-1_amd64.deb
+Size: 10411920
+SHA256: 77b30eeee91b60f797164e866e799f5b1bbd40de3b826b73fdecf98fcaf340e1
+SHA1: 702fd249ae7a30f1b9918bd1b701c3ed6eb1eb95
+MD5sum: 083d6b1a5d3cfaf68f8144dd9f14be86
+Description: Linux kernel headers for 7.0.0-2026060201-microsoft-custom-WSL2 on amd64
+ This package provides kernel header files for 7.0.0-2026060201-microsoft-custom-WSL2 on amd64
+ .
+ This is useful for people who need to build external modules
+
 Package: linux-image-5.15.68.1-20221005-1-microsoft-custom-wsl2+
 Source: linux-upstream
 Version: 5.15.68.1-20221005-1-microsoft-custom-wsl2+-1
@@ -128,6 +147,24 @@ MD5sum: 230c9c2794711b2b1b274fde379e384d
 Description: Linux kernel, version 6.1.0-rc6-20221125-1-microsoft-custom-wsl2
  This package contains the Linux kernel, modules and corresponding other
  files, version: 6.1.0-rc6-20221125-1-microsoft-custom-wsl2.
+
+Package: linux-image-7.0.0-2026060201-microsoft-custom-wsl2
+Source: linux-upstream
+Version: 7.0.0-1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 71437
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-image-7.0.0-2026060201-microsoft-custom-wsl2_7.0.0-1_amd64.deb
+Size: 24844656
+SHA256: 37442db1fa2a35bb1eaadaf3b6e19c5e2dd61c53dd423f8925e509e1adb77166
+SHA1: b53950a9b4fe70d799d4d8f5a22ba609e9e4a110
+MD5sum: a2bf77e6dfcb44b6e0ade81f6fd5648b
+Description: Linux kernel, version 7.0.0-2026060201-microsoft-custom-WSL2
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 7.0.0-2026060201-microsoft-custom-WSL2.
 
 Package: linux-libc-dev
 Source: linux-upstream
