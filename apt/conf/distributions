@@ -69,3 +69,27 @@ Architectures: source amd64 arm64
 Components: main
 Description: WSL-specific packages hosted on the Arkane Systems github repository
 SignWith: 428AD1A0BA078ABB
+
+Origin: ArkaneSystems
+Label: WSL Transdebian
+Codename: forky
+Architectures: source amd64 arm64
+Components: main
+Description: WSL-specific packages hosted on the Arkane Systems github repository
+SignWith: 428AD1A0BA078ABB
+
+Origin: ArkaneSystems
+Label: WSL Transdebian
+Codename: noble
+Architectures: source amd64 arm64
+Components: main
+Description: WSL-specific packages hosted on the Arkane Systems github repository
+SignWith: 428AD1A0BA078ABB
+
+Origin: ArkaneSystems
+Label: WSL Transdebian
+Codename: resolute
+Architectures: source amd64 arm64
+Components: main
+Description: WSL-specific packages hosted on the Arkane Systems github repository
+SignWith: 428AD1A0BA078ABB

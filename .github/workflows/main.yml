@@ -38,7 +38,7 @@ jobs:
             echo "No packages to process."
             exit 0
           fi
-          for distro in bionic focal jammy buster bullseye bookworm sid trixie; do
+          for distro in jammy bullseye bookworm sid trixie forky noble resolute; do
             for deb in "${debs[@]}"; do
               reprepro --ignore=wrongdistribution -b apt includedeb "$distro" "$deb" || true
             done

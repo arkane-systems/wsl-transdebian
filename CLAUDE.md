@@ -47,17 +47,20 @@ prunes workflow run history nightly and is unrelated to publishing.
 
 ## Supported distributions and architectures
 
-| Codename   | Distribution         | Status      |
-|------------|-----------------------|-------------|
-| `buster`   | Debian 10              | Supported   |
-| `bullseye` | Debian 11              | Supported   |
-| `bookworm` | Debian 12              | Supported   |
-| `trixie`   | Debian 13               | Supported   |
-| `sid`      | Debian (testing)       | Supported   |
-| `bionic`   | Ubuntu 18.04 LTS        | Supported   |
-| `focal`    | Ubuntu 20.04 LTS        | Supported   |
-| `jammy`    | Ubuntu 22.04 LTS        | Supported   |
-| `stretch`  | Debian 9                | Deprecated (no longer updated) |
+| Codename   | Distribution            | Status      |
+|------------|--------------------------|-------------|
+| `bullseye` | Debian 11                | Supported   |
+| `bookworm` | Debian 12                | Supported   |
+| `trixie`   | Debian 13                | Supported   |
+| `forky`    | Debian 14 (testing)      | Supported   |
+| `sid`      | Debian (unstable)        | Supported   |
+| `jammy`    | Ubuntu 22.04 LTS         | Supported   |
+| `noble`    | Ubuntu 24.04 LTS         | Supported   |
+| `resolute` | Ubuntu 26.04 LTS         | Supported   |
+| `stretch`  | Debian 9                 | Deprecated (no longer updated) |
+| `buster`   | Debian 10                | Deprecated (no longer updated) |
+| `bionic`   | Ubuntu 18.04 LTS         | Deprecated (no longer updated) |
+| `focal`    | Ubuntu 20.04 LTS         | Deprecated (no longer updated) |
 
 `apt/conf/distributions` declares `amd64` and `arm64` as valid architectures per codename, but
 the publish workflow's `includedeb` step only ever ingests whatever architecture the uploaded
@@ -75,7 +78,13 @@ the publish workflow's `includedeb` step only ever ingests whatever architecture
   database) on the next push.
 - **Adding a new distro** requires three coordinated edits: add a stanza to
   `apt/conf/distributions`, add the codename to the `Allow:` line in `apt/conf/incoming`, and
-  add it to the `distro` loop in `.github/workflows/main.yml`.
+  add it to the `distro` loop in `.github/workflows/main.yml`. Update the table above and the
+  README's distro list too.
+- **Deprecating a distro**: remove it from the `Allow:` line in `apt/conf/incoming` and from the
+  `distro` loop in `.github/workflows/main.yml` so no further packages are ingested for it, but
+  leave its stanza in `apt/conf/distributions` in place — existing packages for that codename
+  must remain servable. Update the table above and the README's distro list to mark it
+  deprecated (see `stretch`, `buster`, `bionic`, `focal` for the pattern).
 - **Kernel packages**: `linux-upstream` source packages (kernel headers/image) are added
   regularly as new WSL2 kernel builds ship; these are typically the only manual, recurring
   contribution pattern in this repo (see git log for examples such as "Added WSL kernel

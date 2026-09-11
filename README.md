@@ -3,18 +3,21 @@ A repository for WSL-only apt packages.
 
 This includes packages for multiple distributions which use apt packages, not merely Debian. Currently supported are:
 
- * Debian 10 _buster_
  * Debian 11 _bullseye_
  * Debian 12 _bookworm_
  * Debian 13 _trixie_
- * Debian (testing) _sid_
- * Ubuntu 18.04 LTS _bionic_
- * Ubuntu 20.04 LTS _focal_
+ * Debian 14 (testing) _forky_
+ * Debian (unstable) _sid_
  * Ubuntu 22.04 LTS _jammy_
+ * Ubuntu 24.04 LTS _noble_
+ * Ubuntu 26.04 LTS _resolute_
  
 Deprecated (no longer updated) distributions include:
 
  * Debian 9 _stretch_
+ * Debian 10 _buster_
+ * Ubuntu 18.04 LTS _bionic_
+ * Ubuntu 20.04 LTS _focal_
 
 Please note that this list of currently supported distributions reflects only those which I have tested myself and as such am prepared to support. I don't have time to test against all other possibilities. This is not, of course, to say that any package posted here won't work on unlisted Ubuntu distributions or other Debian derivatives; merely that not having tested it myself, I'm not going to advertise that it _does_ by shipping a package entailed to that distribution. You will need to manually adjust the created `sources.list` file to use the most compatible distribution.
 
