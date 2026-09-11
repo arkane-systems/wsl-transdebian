@@ -1,0 +1,130 @@
+Package: bottle-imp
+Version: 1.0
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 59
+Depends: libc6 (>= 2.34), systemd (>= 232-25), python3 (>= 3.7), python3-pip, python3-psutil, systemd-container (>= 232-25)
+Conflicts: systemd-genie
+Homepage: https://github.com/arkane-systems/bottle-imp
+Priority: optional
+Section: contrib/misc
+Filename: pool/main/b/bottle-imp/bottle-imp_1.0_amd64.deb
+Size: 21520
+SHA256: 41d8a14bb5bcd11beca0b06367d327c86b438182b57639110752d48ce665edd1
+SHA1: 66e6e134ae69210cc5e512bff69ff41f85b1bb3f
+MD5sum: 70a866c9fb54336203a9611022ad549c
+Description: helper for native systemd support under WSL
+ Fixes some secondary facilities and allows easy access to a user session
+ when systemd is run under Windows Subsystem for Linux using its native
+ support. A spinoff of system-genie.
+
+Package: linux-headers-7.0.0-2026060301-microsoft-custom-wsl2
+Source: linux-upstream
+Version: 7.0.0-1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 58274
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-headers-7.0.0-2026060301-microsoft-custom-wsl2_7.0.0-1_amd64.deb
+Size: 10414528
+SHA256: fd3ff9948984214d6b3e37aeabc8b8a6741068cad1fe4d085362d79ef6a95eca
+SHA1: b1042777eb6984b850d8b368f5afa4b9b658fde3
+MD5sum: f0a70f6074a2d707588d91e24b62cb33
+Description: Linux kernel headers for 7.0.0-2026060301-microsoft-custom-WSL2 on amd64
+ This package provides kernel header files for 7.0.0-2026060301-microsoft-custom-WSL2 on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-7.0.0-2026060301-microsoft-custom-wsl2
+Source: linux-upstream
+Version: 7.0.0-1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 71838
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-image-7.0.0-2026060301-microsoft-custom-wsl2_7.0.0-1_amd64.deb
+Size: 24999464
+SHA256: 39a20dd150a87d77d17e7b0d0c4c9501eb97d44de0dad6992366d021bd35c52c
+SHA1: 973710c5b642ff77214a3ede9b31d75a537793e5
+MD5sum: 2e96c68b5bde5e55a14c20c58d89ee91
+Description: Linux kernel, version 7.0.0-2026060301-microsoft-custom-WSL2
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 7.0.0-2026060301-microsoft-custom-WSL2.
+
+Package: pulseaudio-dummy
+Version: 14.2-2
+Architecture: all
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 9
+Provides: pulseaudio
+Multi-Arch: foreign
+Homepage: https//github.com/cerebrate/fake-packages
+Priority: optional
+Section: sound
+Filename: pool/main/p/pulseaudio-dummy/pulseaudio-dummy_14.2-2_all.deb
+Size: 2236
+SHA256: fd10f28bd1a44d92212b5d1f3f02a8ced091783fd7c0309dc8d153526e7f8b58
+SHA1: 021a5a81104fdecb8eb67632ea50ec28adfc386b
+MD5sum: 2e718230c7091bfb8634b3730edfe7f4
+Description: Dummy pulseaudio package.
+ Hacks dependencies to allow non-install under WSLg
+
+Package: wsl-drop-caches
+Version: 0.5
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 24
+Depends: systemd, python3, python3-psutil
+Homepage: https://github.com/arkane-systems/wsl-drop-cache
+Priority: optional
+Section: contrib/misc
+Filename: pool/main/w/wsl-drop-caches/wsl-drop-caches_0.5_amd64.deb
+Size: 3884
+SHA256: 000d7609c28ba26bdd1d0b2428315e6b692b66da7f390c2562551a9f3b393570
+SHA1: 018256310104c893b4dd02908c14f60a1fbad622
+MD5sum: b5beed62ad48c5efd332ef16a2400aab
+Description: periodically drops the caches, saving memory under Windows Subsystem for Linux
+ A python script which periodically drops the caches, which saves memory under
+ Windows Subsystem for Linux, which would otherwise expand to use all WSL
+ available memory.
+
+Package: wsl-share-fs
+Version: 0.1
+Architecture: amd64
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 21
+Depends: systemd
+Homepage: https://github.com/arkane-systems/wsl-share-fs
+Priority: optional
+Section: contrib/misc
+Filename: pool/main/w/wsl-share-fs/wsl-share-fs_0.1_amd64.deb
+Size: 2612
+SHA256: 68b5f4d3d5b2a721cf44069bd85365d74e3fb79c890316fb2005f9905e500d60
+SHA1: b87e1dc85f59c02a639a6cb82c476b8ecfb6b745
+MD5sum: 5c7c4253e57af53cbf7076a4e65f2b4c
+Description: automatically mounts the root filesystem for cross-distro sharing
+ A systemd service and script which mounts the distro filesystem under /mnt/wsl,
+ enabling cross-distro sharing of it under Windows Subsystem for Linux.
+
+Package: xwayland-dummy
+Version: 2:1.20.11-1
+Architecture: all
+Maintainer: Alistair Young <avatar@arkane-systems.net>
+Installed-Size: 9
+Provides: xwayland
+Multi-Arch: foreign
+Homepage: https://github.com/cerebrate/fake-packages
+Priority: optional
+Section: x11
+Filename: pool/main/x/xwayland-dummy/xwayland-dummy_1.20.11-1_all.deb
+Size: 2228
+SHA256: d7159571f22f3ba4f349903a4a4a896ae2ae0e65557d7d2ccb6159291d202612
+SHA1: d77d4826e3818bbaa42d9632062419f74f57c716
+MD5sum: 62ec5370f60fe04aa188b437bab65c7c
+Description: Dummy xwayland package.
+ Hacks dependencies to allow non-install under WSLg.
+
