@@ -56,6 +56,30 @@ Description: quick way into a systemd "bottle" under Windows Subsystem for Linux
  a container within which systemd is pid 1, effectively enabling the use
  of systemd within a WSL distro.
 
+Package: wslc-remote
+Version: 0.1.0+git20260930.cebc475
+Architecture: all
+Depends: bash (>= 4.0), iproute2
+Recommends: unfs3, curl | wget
+Suggests: build-essential, flex, bison, pkgconf | pkg-config, libtirpc-dev, rpcsvc-proto
+Maintainer: wslc-remote maintainers <noreply@example.invalid>
+Homepage: https://github.com/craigloewen-msft/WSLc-remote
+Priority: optional
+Section: utils
+Filename: pool/main/w/wslc-remote/wslc-remote_0.1.0+git20260930.cebc475_all.deb
+Size: 14758
+SHA256: ce7f64bd3033a9d21ad206ee1db103dd1072d95e79f3a672f8d834a2127191b7
+SHA1: 92b054527a3e305a20f5dc6935e94e06dfaf1be6
+MD5sum: a5de2b24b29ae3a58218fd84677baf0e
+Description: NFS-accelerated drop-in for the WSL container CLI (wslc)
+ Installs the wslc wrapper (and a "container" alias). Host bind mounts passed
+ to "wslc run -v" are served to the container runtime VM over a loopback NFS
+ export (UNFS3 unfsd) instead of the slower default virtiofs share.
+ .
+ Requires WSL with container support (wslc.exe). The unfsd server comes from
+ the unfs3 package where the distribution has one; otherwise run
+ "sudo wslc-build-unfsd" to build the official release.
+
 Package: xwayland-dummy
 Version: 2:1.20.11-1
 Architecture: all
