@@ -1,13 +1,13 @@
 Origin: ArkaneSystems
 Label: WSL Transdebian
 Codename: noble
-Date: Wed, 30 Sep 2026 05:19:48 UTC
+Date: Sun, 15 Nov 2026 04:49:58 UTC
 Architectures: amd64 arm64
 Components: main
 Description: WSL-specific packages hosted on the Arkane Systems github repository
 MD5Sum:
- 6caa7ed58f25b3acedaed04a436ab781 6203 main/binary-amd64/Packages
- 45e345e111d3fb7334f8d14f2040718b 2424 main/binary-amd64/Packages.gz
+ f91fb08d306d962978d8247025caf65d 8495 main/binary-amd64/Packages
+ 097e5dacaeba6424391337981373539f 2932 main/binary-amd64/Packages.gz
  a2f3caedb64cd6fb7d0cb5f6bed4df32 163 main/binary-amd64/Release
  1e94eec3dc9115cc686cb2b3ec6bc039 3161 main/binary-arm64/Packages
  8c462b8bb2afa63f31ec2c891e6f3b5a 1522 main/binary-arm64/Packages.gz
@@ -16,8 +16,8 @@ MD5Sum:
  7029066c27ac6f5ef18d660d5741979a 20 main/source/Sources.gz
  d98f5a9c7aeb10035a4016358d9e9454 164 main/source/Release
 SHA1:
- 2d30cf01a8bdb98542f414f4e6f7c1bcbd2538af 6203 main/binary-amd64/Packages
- 60a18c35315a7c9d9869bda6127f771ef547069c 2424 main/binary-amd64/Packages.gz
+ e778c66c204fda4eaf089ccebe57875b3c3005fa 8495 main/binary-amd64/Packages
+ b754e03e2bb07268d524a427172475180c808142 2932 main/binary-amd64/Packages.gz
  d03000dff4b7f7a13deb756cbaa63dcc6f4c9536 163 main/binary-amd64/Release
  e10798049e713abcb41af4f9b3e2db7fa667e8fb 3161 main/binary-arm64/Packages
  441a146caa6833eeb1adc4ffab4b2a6a3e865cf0 1522 main/binary-arm64/Packages.gz
@@ -26,8 +26,8 @@ SHA1:
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/source/Sources.gz
  48f62b752773af3825c9beeb2c53b2b6987c998b 164 main/source/Release
 SHA256:
- ab3e25fe0612410f490777621619863808b605ee501ba6a7d74c23ebb85f36b2 6203 main/binary-amd64/Packages
- 78fa2eeffddca896cad42601ca461077019df66edc86a9d99e7349b26de79431 2424 main/binary-amd64/Packages.gz
+ f83b62be83ce9cf291e7bb6339cca5ae0bb479d80b7daed3df028716700cc767 8495 main/binary-amd64/Packages
+ 8e886ad0c073e721be8b10e7c8ec700db7a23a2c4dc1f70bf7675f29cf99c538 2932 main/binary-amd64/Packages.gz
  c562e878dcc6b169a20988934960aedd1dc7602263b1eb0a06f6d0529afc93c4 163 main/binary-amd64/Release
  50dbc9c5b96005165dba90f9670af6f178d08dc1291001e60b2c3417f784a5ae 3161 main/binary-arm64/Packages
  f54239f6630c8e717d13e6a2fee9274936e81845e8cf6cc8b61667073673020c 1522 main/binary-arm64/Packages.gz

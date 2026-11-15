@@ -4,13 +4,13 @@ Hash: SHA512
 Origin: ArkaneSystems
 Label: WSL Transdebian
 Codename: noble
-Date: Wed, 30 Sep 2026 05:19:48 UTC
+Date: Sun, 15 Nov 2026 04:49:58 UTC
 Architectures: amd64 arm64
 Components: main
 Description: WSL-specific packages hosted on the Arkane Systems github repository
 MD5Sum:
- 6caa7ed58f25b3acedaed04a436ab781 6203 main/binary-amd64/Packages
- 45e345e111d3fb7334f8d14f2040718b 2424 main/binary-amd64/Packages.gz
+ f91fb08d306d962978d8247025caf65d 8495 main/binary-amd64/Packages
+ 097e5dacaeba6424391337981373539f 2932 main/binary-amd64/Packages.gz
  a2f3caedb64cd6fb7d0cb5f6bed4df32 163 main/binary-amd64/Release
  1e94eec3dc9115cc686cb2b3ec6bc039 3161 main/binary-arm64/Packages
  8c462b8bb2afa63f31ec2c891e6f3b5a 1522 main/binary-arm64/Packages.gz
@@ -19,8 +19,8 @@ MD5Sum:
  7029066c27ac6f5ef18d660d5741979a 20 main/source/Sources.gz
  d98f5a9c7aeb10035a4016358d9e9454 164 main/source/Release
 SHA1:
- 2d30cf01a8bdb98542f414f4e6f7c1bcbd2538af 6203 main/binary-amd64/Packages
- 60a18c35315a7c9d9869bda6127f771ef547069c 2424 main/binary-amd64/Packages.gz
+ e778c66c204fda4eaf089ccebe57875b3c3005fa 8495 main/binary-amd64/Packages
+ b754e03e2bb07268d524a427172475180c808142 2932 main/binary-amd64/Packages.gz
  d03000dff4b7f7a13deb756cbaa63dcc6f4c9536 163 main/binary-amd64/Release
  e10798049e713abcb41af4f9b3e2db7fa667e8fb 3161 main/binary-arm64/Packages
  441a146caa6833eeb1adc4ffab4b2a6a3e865cf0 1522 main/binary-arm64/Packages.gz
@@ -29,8 +29,8 @@ SHA1:
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/source/Sources.gz
  48f62b752773af3825c9beeb2c53b2b6987c998b 164 main/source/Release
 SHA256:
- ab3e25fe0612410f490777621619863808b605ee501ba6a7d74c23ebb85f36b2 6203 main/binary-amd64/Packages
- 78fa2eeffddca896cad42601ca461077019df66edc86a9d99e7349b26de79431 2424 main/binary-amd64/Packages.gz
+ f83b62be83ce9cf291e7bb6339cca5ae0bb479d80b7daed3df028716700cc767 8495 main/binary-amd64/Packages
+ 8e886ad0c073e721be8b10e7c8ec700db7a23a2c4dc1f70bf7675f29cf99c538 2932 main/binary-amd64/Packages.gz
  c562e878dcc6b169a20988934960aedd1dc7602263b1eb0a06f6d0529afc93c4 163 main/binary-amd64/Release
  50dbc9c5b96005165dba90f9670af6f178d08dc1291001e60b2c3417f784a5ae 3161 main/binary-arm64/Packages
  f54239f6630c8e717d13e6a2fee9274936e81845e8cf6cc8b61667073673020c 1522 main/binary-arm64/Packages.gz
@@ -40,17 +40,17 @@ SHA256:
  7deaf2f6137cfa9222bcd65d367d7128929a724eb7fb2e1204725eebc41a6171 164 main/source/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEQ74zMj7dcSYDvubAQorRoLoHirsFAmq8m/QACgkQQorRoLoH
-irtJhhAArcJqwRBX3c5KMt4Mcb0YSGA65qO9vpGVbynSlVKq2dpCSlgVeSLH04wd
-bLj9WMFoMuo7uCYOOMhLi/Vg9BEMNDJ6SAdDWBMqtGh2nP+c7OksIzLZPcRpvGdb
-BIXwfkitFsP8L5nyA9ZVhhUJqEFbBdedzwCVs4XIgrK36yPHleqgT99zuchy6Ew8
-1Y8OGfitFmHPgt2RlNIEs2BwO4Ig95Ouhm8XO418mKqLrUpYMAjl2QwaD3GNUtAr
-Xebzmuj6b/dgRfSzGVyYq9qCaxrNtDM5fGtDFX7D+6LmZ0r0roZ9bkhcu22jo352
-RoBZ8/WNw1QDOU1OiR4SfvIDmQvdJ/lr9JDs5kdoH06faE99eTPte9b5Wt6Von/d
-rByH1OAs4+jeeRL2G8ned09+INem4gz4Iu/d0qkjHmC4NIDzuIYjo11OVbtEas5f
-U73VWCrcjZYorBjoLM3kI8z75Doxm/6O7kuaFAX+NDCOhobTRwd1qsnmxIDtT1jx
-vNUMHL2xUHPrESaVzNsWa0EK5LRFwjk2EAKRh6lPvE2QBWlxD5GttHcSVdUfi/fM
-O7COnnDyiYp3twZnPflavq/5S4fCPv9dM6rNrqfAxCP47wq+ZOXfKxCGoIqha9P3
-AP9U5aZtDEJv3Z2AL8OjlGEbPWEfWPZudE9gyjfpnnk9h5QIBl0=
-=7ga7
+iQIzBAEBCgAdFiEEQ74zMj7dcSYDvubAQorRoLoHirsFAmr5OfYACgkQQorRoLoH
+irvrpQ/7B1JvObJDJ8sxoo62YNjbSMexlJwB5uZlSXkWSg/xq2oHep7c/cqvlMAs
+6g69IadWzLHukGeOwt6T7PWqaZjGhxjOzvp+OhSJiCgPV4FI0JfaBpzVow7/R0xn
+coJnm+FrfvNzALod/YCvl9r506ti9+hun8wHE6aPCkZVb1Do0pVxjGlzV0/ojj3T
+zlU7Hnr+GkQmUpWhO0nWSbTSwT9jZwlAQOqxrDrBt598scUr/P48xuLpi5eeOtYX
+4d24jhszSZWnqngDMsxGxreHQ3WmFkJ6cm7X8oRZRdQxj2p4KPyH7F8pBKCVAP0g
+GEBCgWm2mtZgRswZ0Qmi9L43M0T9e9qu+1cCd6alxlahJ9o3lPM4JEDZ/WnphN2q
+2nEnhqNzpqlUA/kUVQ+FyiABda0eEPka5WKHjRzj/wlzptC/ONZ8hNrCTcIMQPYq
+sGOEcG5y15+eDSKyxsBGWaMOCkBcSmrKHxAJzTqp+OM9+pisVs7hvuh3HKpcN/Je
+O0jAz1Tz71Ur4rrFaAvbWiPtgphx4/henqaHEU/23oRbv76gElNzNr0kA9bKf2XP
+3pfyAI7jc4WoQSANrHb4llwKSsCzsjJkqqJYAg+hUHYkUsbqOqSf9KqgzdpwhhwL
+doqB+rjDTlEIlv+jL4WSNPhUU9lh/6fcDRgnrGyshGTbZPcpP9s=
+=8lBu
 -----END PGP SIGNATURE-----
