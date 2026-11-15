@@ -34,6 +34,14 @@ jobs:
         run: |
           shopt -s nullglob
           debs=(updates/*.deb)
+          # Guard: refuse Git LFS pointer files (checkout uses lfs: false, and
+          # GitHub Pages cannot serve LFS content, so .debs must be plain git).
+          for deb in "${debs[@]}"; do
+            if head -c 100 "$deb" | grep -q 'git-lfs.github.com/spec'; then
+              echo "::error::$deb is a Git LFS pointer; .deb files must not use LFS."
+              exit 1
+            fi
+          done
           if [ "${#debs[@]}" -eq 0 ]; then
             echo "No packages to process."
             exit 0
